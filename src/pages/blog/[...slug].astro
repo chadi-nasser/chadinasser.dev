@@ -1,0 +1,39 @@
+---
+import { CommentSection } from "@/components/CommentSection";
+import { Separator } from "@/components/ui/separator";
+import MainLayout from "@/layouts/MainLayout.astro";
+import { getImageByPath } from "@/lib/utils";
+import type { GetStaticPaths } from "astro";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+export const getStaticPaths = (async () => {
+  const blogs = await getCollection("blog");
+  return blogs.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { title, description } = entry.data;
+---
+
+<MainLayout>
+  <div class="flex flex-col">
+    <div class="text-center py-8 ~mt-10/20">
+      <h1 class="~text-3xl/6xl font-bold">
+        {title}
+      </h1>
+      <h2 class="text-muted-foreground ~text-lg/xl mt-2">
+        {description}
+      </h2>
+    </div>
+    <div class="text-xl prose dark:prose-invert max-w-none mt-8">
+      <Content />
+    </div>
+    <Separator className="my-8" />
+    <CommentSection client:only="react" />
+  </div>
+</MainLayout>

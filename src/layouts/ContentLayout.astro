@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+}
+import { capitalize } from '@/lib/utils'
+import MainLayout from '@/layouts/MainLayout.astro'
+const { title } = Astro.props
+const html = await Astro.slots.render('default')
+---
+<MainLayout>
+  <h1 class="mx-auto text-primary ~text-7xl/9xl mt-12">{capitalize(title)}</h1>
+  <div class="mt-12 w-full flex justify-center">
+    {!!html ? <Fragment set:html={html} /> : <p class="text-xl">There is no {title} to show, yet.</p>}
+  </div>
+</MainLayout>

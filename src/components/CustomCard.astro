@@ -1,0 +1,28 @@
+---
+interface CustomCardProps {
+  title: string;
+  description?: string;
+  image?: string;
+}
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { getImageByPath } from "@/lib/utils";
+import { Image } from "astro:assets";
+
+const { title, description, image: imagePath } = Astro.props as CustomCardProps;
+let image = getImageByPath(imagePath || 'default.jpg');
+
+if (!image) {
+  // load a default image
+  image = getImageByPath('default.jpg');
+}
+---
+<Card className='overflow-hidden flex flex-col'>
+  <Image src={image!} alt={title} class="w-full min-h-[200px] aspect-video object-cover" />
+  <CardHeader className="p-4 flex-1">
+    <CardTitle className="text-2xl text-primary">{title}</CardTitle>
+    {description&&<CardDescription className="text-md">{description}</CardDescription>}
+  </CardHeader>
+  <CardContent className="flex justify-stretch items-center gap-x-1 p-4">
+    <slot />
+  </CardContent>
+</Card>

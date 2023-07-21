@@ -1,0 +1,19 @@
+---
+import CustomCard from "@/components/CustomCard.astro";
+import { Button } from "@/components/ui/button";
+import ContentLayout from "@/layouts/ContentLayout.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+const blogs = await getCollection('blog');
+---
+<ContentLayout title="blogs">
+  {blogs.length ? <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+    {blogs.map(({data: {title, description, image}, slug}: CollectionEntry<'blog'>) => (
+      <CustomCard title={title} description={description} image={image}>
+        <a href={`/blog/${slug}`} class="flex-1">
+          <Button variant="outline" className='w-full'><span class="icon-[lucide--book-open] size-4 mr-2"></span>Read</Button>
+        </a>
+      </CustomCard>
+    )
+  )}</ul> : null}
+</ContentLayout>

@@ -1,0 +1,45 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '@/consts';
+import ThemeToggle from '@/components/ThemeToggle.astro';
+---
+<header class="pb-12">
+	<nav id="navbar" class="flex items-center justify-between px-4 py-3 fixed inset-x-0 translate-y-0 [&.hide]:-translate-y-full transition-all duration-300 bg-background z-10">
+		<div>
+			<a href="/" class="font-semibold opacity-80 hover:opacity-100"><div class="inline-flex items-center">{SITE_TITLE}<span class="icon-[lucide--chevron-right] size-5"></span></div><span class="inline-block -ml-0.5 w-2.5 h-0.5 bg-foreground rounded-full animate-fade-in-out duration-1000"></span></a>
+		</div>
+		<div class="flex items-center justify-end gap-4">
+			<HeaderLink href="/project">
+				<span class="icon-[lucide--rocket] block size-5 sm:hidden"></span>
+				<span class="hidden sm:block">Projects</span>
+			</HeaderLink>
+			<HeaderLink href="/blog">
+				<span class="icon-[lucide--pen-line] block size-5 sm:hidden"></span>
+				<span class="hidden sm:block">Blogs</span>
+			</HeaderLink>
+			<ThemeToggle />
+		</div>
+	</nav>
+</header>
+
+<script is:inline>
+	function navbarHide() {
+		const navbar = document.getElementById('navbar');
+		let prevScroll = window.scrollY;
+		window.addEventListener('scroll', () => {
+			const currentScroll = window.scrollY;
+			if (currentScroll <= 0) {
+				navbar.classList.remove('hide');
+				navbar.classList.remove('border-b');
+			} else if (currentScroll < prevScroll) {
+				navbar.classList.remove('hide');
+				navbar.classList.add('border-b');
+			} else {
+				navbar.classList.add('hide');
+			}
+			prevScroll = currentScroll;
+		});
+	}
+	document.addEventListener('DOMContentLoaded', navbarHide);
+	document.addEventListener('astro:after-swap', navbarHide);
+</script>

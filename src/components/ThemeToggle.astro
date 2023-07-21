@@ -1,0 +1,23 @@
+---
+---
+<button id="theme-toggle" class="relative text-muted-foreground hover:text-foreground hover:bg-transparent size-5">
+  <span class="icon-[lucide--sun] absolute inset-0 size-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"></span>
+  <span class="icon-[lucide--moon-star] absolute inset-0 size-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"></span>
+</button>
+
+<script is:inline>
+  const toggleTheme = () => {
+    document.documentElement.classList.toggle('dark');
+    if (document.documentElement.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  };
+  const attachThemeToggle = () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', toggleTheme);
+  };
+  document.addEventListener('DOMContentLoaded', attachThemeToggle);
+  document.addEventListener('astro:after-swap', attachThemeToggle);
+</script>

@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import back from "@/assets/flip-avatar/back.jpg";
+
+const { githubImage } = Astro.props;
+const defaultImage =
+  "https://placehold.co/800x800/1a1b25/fff?text=No+Github\\nProfile+Picture";
+---
+
+<div class="group relative size-full perspective-600">
+  <img
+    loading="eager"
+    src={githubImage ?? defaultImage}
+    alt=""
+    class="group-hover:rotate-y-180 border"
+  />
+  <Image
+    loading="eager"
+    src={back}
+    alt=""
+    class="-rotate-y-180 group-hover:rotate-y-0 border"
+  />
+</div>
+
+<style scoped>
+  img {
+    @apply absolute transition-transform transform backface-hidden duration-700 shadow-md object-cover size-full rounded-xl;
+  }
+</style>

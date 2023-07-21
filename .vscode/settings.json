@@ -1,0 +1,8 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["/src/content/project/**/*.json"],
+      "url": "/.astro/collections/project.schema.json"
+    }
+  ]
+}

@@ -1,0 +1,2108 @@
+{
+ "url": ".taste-skill\\mockup\\index.html",
+ "at": "2026-10-27T11:10:23.961Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.83,
+    0.83,
+    0.55,
+    0.36,
+    0.36,
+    0.27,
+    0.71,
+    0.54,
+    0.93
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7971,
+     "screens": 8.9,
+     "words": 436,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 4,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "portrait.avif",
+      "pigeon.avif",
+      "site.avif",
+      "bshirre.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Chadi Nasser, DevOps engineer. UPTIME",
+     "words": 5,
+     "chars": 37,
+     "lines": 1,
+     "size": 662.4,
+     "vw": 46,
+     "font": "Bodoni Moda",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.8,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 1.75,
+     "top": 410,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Chadi Nasser, DevOps engineer. UPTIME",
+     "words": 5,
+     "lines": 1,
+     "size": 662.4,
+     "font": "Bodoni Moda"
+    },
+    "headings": [
+     {
+      "text": "Chadi Nasser, DevOps engineer. UPTIME",
+      "words": 5,
+      "chars": 37,
+      "lines": 1,
+      "size": 662.4,
+      "vw": 46,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 1.75,
+      "top": 410,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "I’m Chadi Nasser, a DevOps engineer and software developer based in Lebanon. For 3+ years I’ve built and scaled the backend behind lbauto.trade: Java and Spring services, JWT authentication, request r",
+      "words": 104,
+      "chars": 628,
+      "lines": 7,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Jost",
+      "weight": 400,
+      "tracking": -0.005,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1134,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Three.js is cool, but it costs tons of JavaScript and 3D downloads. I scrapped that portfolio. This one ships none.",
+      "words": 20,
+      "chars": 115,
+      "lines": 3,
+      "size": 31.7,
+      "vw": 2.2,
+      "font": "Jost",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 2636,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "0.9 s",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 2867,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Say hello",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6162,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "GitHub",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6322,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "LinkedIn",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6482,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Open to work",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6802,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "CHADI",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 662.4,
+      "vw": 46,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 7483,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 7,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Jost",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "Bodoni Moda",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      17,
+      20,
+      24,
+      32,
+      64,
+      662
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Jost",
+      "size": 16,
+      "leading": 1.4,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.7
+     },
+     "measureChars": 84,
+     "max": {
+      "size": 662.4,
+      "vw": 46,
+      "font": "Bodoni Moda",
+      "text": "UPTIME"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0035ea",
+     "bodyBgHsl": {
+      "h": 226,
+      "s": 1,
+      "l": 0.46
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#002fd6",
+       "top": 1584,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.42
+       }
+      },
+      {
+       "color": "#e9e24b",
+       "top": 7135,
+       "hsl": {
+        "h": 57,
+        "s": 0.78,
+        "l": 0.6
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#fefeff",
+       "share": 0.84
+      },
+      {
+       "color": "#0035ea",
+       "share": 0.15
+      },
+      {
+       "color": "#e9e24b",
+       "share": 0.01
+      },
+      {
+       "color": "#101011",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#e9e24b",
+      "hsl": {
+       "h": 57,
+       "s": 0.78,
+       "l": 0.6
+      },
+      "fg": "#101011"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 3,
+     "fixed": false,
+     "height": 26,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "bodoni moda",
+     "jost"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7971,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 30,
+      "media": 0,
+      "middle": 801,
+      "heading": {
+       "text": "UPTIME",
+       "size": 662,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.wrap",
+      "tag": "div",
+      "top": 1073,
+      "height": 338,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.photo-band",
+      "tag": "figure",
+      "top": 1584,
+      "height": 612,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#proof.section",
+      "tag": "section",
+      "top": 2403,
+      "height": 922,
+      "words": 75,
+      "media": 1,
+      "middle": 187,
+      "heading": {
+       "text": "0.9 s",
+       "size": 64,
+       "tag": "p"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 47,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.section",
+      "tag": "section",
+      "top": 3325,
+      "height": 1120,
+      "words": 73,
+      "media": 1,
+      "middle": 273,
+      "heading": {
+       "text": "Work",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 185,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#toolkit.section",
+      "tag": "section",
+      "top": 4445,
+      "height": 830,
+      "words": 71,
+      "media": 0,
+      "middle": 380,
+      "heading": {
+       "text": "Toolkit",
+       "size": 20,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 292,
+      "textLeft": 32,
+      "textRight": 292,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.road-band",
+      "tag": "figure",
+      "top": 5274,
+      "height": 620,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.section",
+      "tag": "section",
+      "top": 5929,
+      "height": 1206,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Say hello",
+       "size": 64,
+       "tag": "span"
+      },
+      "left": 32,
+      "right": 905,
+      "textLeft": 32,
+      "textRight": 905,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7135,
+      "height": 836,
+      "words": 72,
+      "media": 0,
+      "middle": 272,
+      "heading": {
+       "text": "CHADI",
+       "size": 662,
+       "tag": "div"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 2232,
+      "height": 336
+     },
+     {
+      "top": 3152,
+      "height": 340
+     },
+     {
+      "top": 4272,
+      "height": 340
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Chadi Nasser, DevOps engineer. UPTIME",
+      "size": 662,
+      "top": 410,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 9
+     },
+     {
+      "x": 0,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 32,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.46,
+    0.87,
+    0.56,
+    0.39,
+    0.31,
+    0.57,
+    0.71
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6797,
+     "screens": 6.6,
+     "words": 436,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 4,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "portrait.avif",
+      "pigeon.avif",
+      "site.avif",
+      "bshirre.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Chadi Nasser, DevOps engineer. UPTIME",
+     "words": 5,
+     "chars": 37,
+     "lines": 1,
+     "size": 360,
+     "vw": 46.9,
+     "font": "Bodoni Moda",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.8,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 1.78,
+     "top": 758,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Chadi Nasser, DevOps engineer. UPTIME",
+     "words": 5,
+     "lines": 1,
+     "size": 360,
+     "font": "Bodoni Moda"
+    },
+    "headings": [
+     {
+      "text": "Chadi Nasser, DevOps engineer. UPTIME",
+      "words": 5,
+      "chars": 37,
+      "lines": 1,
+      "size": 360,
+      "vw": 46.9,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 1.78,
+      "top": 758,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "0.9 s",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 44,
+      "vw": 5.7,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2645,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Say hello",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 5643,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "GitHub",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 5742,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "LinkedIn",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 5842,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Open to work",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6042,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "CHADI",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 360,
+      "vw": 46.9,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.99,
+      "top": 6532,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Jost",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "Bodoni Moda",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      17,
+      20,
+      24,
+      38,
+      44,
+      360
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Jost",
+      "size": 20,
+      "leading": 1.4,
+      "weight": 400,
+      "tracking": 0.005,
+      "contrast": 7.7
+     },
+     "measureChars": 73,
+     "max": {
+      "size": 360,
+      "vw": 46.9,
+      "font": "Bodoni Moda",
+      "text": "UPTIME"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0035ea",
+     "bodyBgHsl": {
+      "h": 226,
+      "s": 1,
+      "l": 0.46
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#002fd6",
+       "top": 1502,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.42
+       }
+      },
+      {
+       "color": "#e9e24b",
+       "top": 6238,
+       "hsl": {
+        "h": 57,
+        "s": 0.78,
+        "l": 0.6
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#fefeff",
+       "share": 0.84
+      },
+      {
+       "color": "#0035ea",
+       "share": 0.15
+      },
+      {
+       "color": "#e9e24b",
+       "share": 0.01
+      },
+      {
+       "color": "#101011",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#e9e24b",
+      "hsl": {
+       "h": 57,
+       "s": 0.78,
+       "l": 0.6
+      },
+      "fg": "#101011"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 3,
+     "fixed": false,
+     "height": 26,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "bodoni moda",
+     "jost"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6797,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1024,
+      "words": 30,
+      "media": 0,
+      "middle": 215,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section",
+      "tag": "section",
+      "top": 1024,
+      "height": 1305,
+      "words": 109,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "About",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 30,
+      "textLeft": 20,
+      "textRight": 30,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#proof.section",
+      "tag": "section",
+      "top": 2329,
+      "height": 1131,
+      "words": 75,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "0.9 s",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 188,
+      "textLeft": 20,
+      "textRight": 220,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.section",
+      "tag": "section",
+      "top": 3460,
+      "height": 940,
+      "words": 73,
+      "media": 1,
+      "middle": 51,
+      "heading": {
+       "text": "Work",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#toolkit.section",
+      "tag": "section",
+      "top": 4400,
+      "height": 676,
+      "words": 71,
+      "media": 0,
+      "middle": 134,
+      "heading": {
+       "text": "Toolkit",
+       "size": 20,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 54,
+      "textLeft": 20,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.road-band",
+      "tag": "figure",
+      "top": 5076,
+      "height": 353,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.section",
+      "tag": "section",
+      "top": 5486,
+      "height": 752,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Say hello",
+       "size": 38,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 446,
+      "textLeft": 20,
+      "textRight": 446,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 6238,
+      "height": 559,
+      "words": 72,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "CHADI",
+       "size": 360,
+       "tag": "div"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 256,
+      "height": 368
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Chadi Nasser, DevOps engineer. UPTIME",
+      "size": 360,
+      "top": 758,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 9
+     },
+     {
+      "x": 0,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 20,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.72,
+    0.85,
+    0.91,
+    0.85,
+    0.63,
+    0.22,
+    0.25,
+    0.53,
+    0.75,
+    0.85
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7848,
+     "screens": 9.3,
+     "words": 434,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 4,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "portrait.avif",
+      "pigeon.avif",
+      "site.avif",
+      "bshirre.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Chadi Nasser, DevOps engineer. UPTIME",
+     "words": 5,
+     "chars": 37,
+     "lines": 2,
+     "size": 257.4,
+     "vw": 66,
+     "font": "Bodoni Moda",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.8,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.53,
+     "top": -68,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Chadi Nasser, DevOps engineer. UPTIME",
+     "words": 5,
+     "lines": 2,
+     "size": 257.4,
+     "font": "Bodoni Moda"
+    },
+    "headings": [
+     {
+      "text": "Chadi Nasser, DevOps engineer. UPTIME",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 257.4,
+      "vw": 66,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.53,
+      "top": -68,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Jost",
+      "weight": 500,
+      "tracking": 0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 940,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The trade-off",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Jost",
+      "weight": 500,
+      "tracking": 0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2272,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Three.js is cool, but it costs tons of JavaScript and 3D downloads. I scrapped that portfolio. This one ships none.",
+      "words": 20,
+      "chars": 115,
+      "lines": 4,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Jost",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2333,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "0.9 s",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 2517,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Work",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Jost",
+      "weight": 500,
+      "tracking": 0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3305,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Contact",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Jost",
+      "weight": 500,
+      "tracking": 0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6693,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Say hello",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 37.4,
+      "vw": 9.6,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6754,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "GitHub",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 37.4,
+      "vw": 9.6,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6847,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "LinkedIn",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 37.4,
+      "vw": 9.6,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6941,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Open to work",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 37.4,
+      "vw": 9.6,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 7128,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "CHADI",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 179.4,
+      "vw": 46,
+      "font": "Bodoni Moda",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 7716,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 4,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Jost",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "Bodoni Moda",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      17,
+      20,
+      24,
+      37,
+      44,
+      179,
+      257
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Jost",
+      "size": 20,
+      "leading": 1.4,
+      "weight": 400,
+      "tracking": -0.005,
+      "contrast": 7.7
+     },
+     "measureChars": 35,
+     "max": {
+      "size": 257.4,
+      "vw": 66,
+      "font": "Bodoni Moda",
+      "text": "UPTIME"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0035ea",
+     "bodyBgHsl": {
+      "h": 226,
+      "s": 1,
+      "l": 0.46
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#002fd6",
+       "top": 1573,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.42
+       }
+      },
+      {
+       "color": "#e9e24b",
+       "top": 7317,
+       "hsl": {
+        "h": 57,
+        "s": 0.78,
+        "l": 0.6
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#fefeff",
+       "share": 0.84
+      },
+      {
+       "color": "#0035ea",
+       "share": 0.15
+      },
+      {
+       "color": "#e9e24b",
+       "share": 0.01
+      },
+      {
+       "color": "#101011",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#e9e24b",
+      "hsl": {
+       "h": 57,
+       "s": 0.78,
+       "l": 0.6
+      },
+      "fg": "#101011"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 0,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "bodoni moda",
+     "jost"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7848,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "UPTIME",
+       "size": 257,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.section",
+      "tag": "section",
+      "top": 844,
+      "height": 1332,
+      "words": 109,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "About",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 34,
+      "textLeft": 20,
+      "textRight": 34,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#proof.section",
+      "tag": "section",
+      "top": 2176,
+      "height": 1033,
+      "words": 75,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "0.9 s",
+       "size": 44,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.section",
+      "tag": "section",
+      "top": 3209,
+      "height": 1840,
+      "words": 73,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Work",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#toolkit.section",
+      "tag": "section",
+      "top": 5048,
+      "height": 1170,
+      "words": 67,
+      "media": 0,
+      "middle": 87,
+      "heading": {
+       "text": "Toolkit",
+       "size": 20,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.road-band",
+      "tag": "figure",
+      "top": 6218,
+      "height": 300,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.section",
+      "tag": "section",
+      "top": 6597,
+      "height": 720,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Say hello",
+       "size": 37,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 76,
+      "textLeft": 20,
+      "textRight": 76,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7317,
+      "height": 531,
+      "words": 72,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "CHADI",
+       "size": 179,
+       "tag": "div"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Chadi Nasser, DevOps engineer. UPTIME",
+      "size": 257,
+      "top": -68,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 9
+     },
+     {
+      "x": 146,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 20,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "statement-length",
+   "width": 1440,
+   "message": "1 large-set statement(s) run past 3 lines at 1440px: \"I’m Chadi Nasser, a DevOps engineer and …\" → 7 lines at 31.7px",
+   "fix": "A statement set large is about 30 words. Cut it, or set the rest as ordinary body text."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\desktop-page-01.jpg",
+    "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\desktop-page-02.jpg",
+    "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\tablet-page-01.jpg",
+    "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\mobile-page-01.jpg",
+    "C:\\Users\\Xxvir\\dev\\chadinasser.dev\\.taste-skill\\inspect4\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

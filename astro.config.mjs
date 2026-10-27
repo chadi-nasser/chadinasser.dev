@@ -1,22 +1,15 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
-
 import sitemap from "@astrojs/sitemap";
-
-import react from "@astrojs/react";
-
-import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://chadinasser.dev",
-  integrations: [
-    mdx(),
-    sitemap(),
-    react(),
-    tailwind({
-      applyBaseStyles: false,
-    }),
-  ],
+  output: "static",
+  integrations: [sitemap()],
+  redirects: {
+    "/project": "/projects",
+    "/blog/chadinasserdev": "/blog/from-react-to-astro",
+    "/blog/chadinasser.dev": "/blog/from-react-to-astro",
+  },
 });

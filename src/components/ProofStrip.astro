@@ -1,0 +1,25 @@
+---
+import site from "@/data/site.json";
+
+const education = site.education.items[0];
+
+const proof = [
+  { value: "3+", label: "Years building backend systems" },
+  { value: "CKA", label: "Certified Kubernetes Administrator" },
+  { value: "AWS", label: "Cloud · Docker · CI/CD" },
+  { value: education.gpa.replace(" / 4.0", ""), label: "M.S. Computer Science GPA" },
+];
+---
+
+<div class="container">
+  <div class="proof-strip">
+    {
+      proof.map((item) => (
+        <div class="proof-item">
+          <span class="proof-value">{item.value}</span>
+          <span class="proof-label">{item.label}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>

@@ -1,0 +1,122 @@
+---
+import SectionHeader from "@/components/SectionHeader.astro";
+import { formatYear } from "@/lib/format";
+
+interface Project {
+  name: string;
+  kind: string;
+  description: string | null;
+  language: string | null;
+  repoUrl: string;
+  homepage: string | null;
+  createdAt: string;
+  pushedAt: string;
+}
+
+interface Props {
+  projects: Project[];
+  kicker?: string;
+  title?: string;
+  intro?: string;
+  limit?: number;
+  showDescriptions?: boolean;
+  showNote?: boolean;
+  total?: number;
+}
+
+const {
+  projects,
+  kicker = "03 / Selected work",
+  title = "Projects",
+  intro = "Public repositories across backend services, infrastructure, and low-level experiments.",
+  limit,
+  showDescriptions = false,
+  showNote = true,
+  total,
+} = Astro.props;
+
+const sorted = [...projects].sort(
+  (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+);
+const items = limit ? sorted.slice(0, limit) : sorted;
+const repositoryCount = total ?? items.length;
+---
+
+<section class="section" id="projects">
+  <div class="container">
+    <SectionHeader kicker={kicker} title={title} intro={intro} />
+
+    <div class="ledger">
+      <div class="ledger-head" aria-hidden="true">
+        <span>Project</span>
+        <span>Type / Stack</span>
+        <span>Year</span>
+        <span>Links</span>
+      </div>
+      <ul>
+        {
+          items.map((project) => (
+            <li class="ledger-row">
+              <a
+                class="ledger-main"
+                href={project.homepage ?? project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit ${project.name}`}
+              >
+                <span class="ledger-name">{project.name}</span>
+                {showDescriptions && project.description && (
+                  <span class="ledger-desc">{project.description}</span>
+                )}
+              </a>
+              <span class="ledger-meta">
+                <span class="ledger-kind">{project.kind}</span>
+                {project.language &&
+                  !project.kind
+                    .toLowerCase()
+                    .includes(project.language.toLowerCase()) && (
+                    <span class="ledger-stack">{project.language}</span>
+                  )}
+              </span>
+              <span class="ledger-year">{formatYear(project.createdAt)}</span>
+              <span class="ledger-actions">
+                {project.homepage && (
+                  <a
+                    href={project.homepage}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live
+                  </a>
+                )}
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    {
+      showNote && (
+        <p class="ledger-note">
+          {repositoryCount} public repositories.{" "}
+          <a href="/projects">See all projects</a> or browse{" "}
+          <a
+            href="https://github.com/chadi-nasser"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>.
+        </p>
+      )
+    }
+  </div>
+</section>

@@ -1,0 +1,23 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import site from "@/data/site.json";
+---
+
+<BaseLayout
+  title="500 — Internal server error"
+  description="Something went wrong on the server."
+  noindex
+>
+  <div class="container error-page">
+    <span class="error-code">500</span>
+    <h1 class="error-title">Something went wrong.</h1>
+    <p class="error-copy">
+      The server hit an unexpected error. Try again in a moment, or email me if
+      it keeps happening.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/">Back to the homepage</a>
+      <a class="btn btn-secondary" href={`mailto:${site.person.email}`}>Email me</a>
+    </div>
+  </div>
+</BaseLayout>

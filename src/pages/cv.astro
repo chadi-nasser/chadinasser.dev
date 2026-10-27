@@ -1,0 +1,193 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Icon from "@/components/Icon.astro";
+import site from "@/data/site.json";
+
+const { person, education, experience, certifications, toolkit, github } = site;
+const updated = new Intl.DateTimeFormat("en", {
+  month: "long",
+  year: "numeric",
+}).format(new Date());
+
+const featuredNames = [
+  "spring-ecommerce-api",
+  "chadinasser.dev",
+  "chip-8-emulator",
+  "SimpleTerraformInfra",
+  "pocketpal-ai",
+];
+
+const featured = featuredNames
+  .map((name) => github.repositories.find((repo) => repo.name === name))
+  .filter((repo): repo is (typeof github.repositories)[number] =>
+    Boolean(repo),
+  );
+
+const projectMeta = (repo: (typeof github.repositories)[number]) =>
+  repo.language &&
+  !repo.kind.toLowerCase().includes(repo.language.toLowerCase())
+    ? `${repo.kind} · ${repo.language}`
+    : repo.kind;
+
+const layers = [...new Set(toolkit.map((item) => item.layer))];
+const groups = layers.map((layer) => ({
+  layer,
+  tools: toolkit.filter((item) => item.layer === layer).map((item) => item.tool),
+}));
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: person.name,
+  jobTitle: person.headline,
+  email: `mailto:${person.email}`,
+  url: site.meta.url,
+  worksFor: {
+    "@type": "Organization",
+    name: person.currentCompany,
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Tripoli",
+    addressRegion: "North Governorate",
+    addressCountry: "LB",
+  },
+  sameAs: [person.githubUrl, person.linkedinUrl],
+};
+---
+
+<BaseLayout
+  title="CV — Chadi Nasser"
+  description="Curriculum vitae for Chadi Nasser, backend and DevOps engineer in Tripoli, Lebanon."
+  jsonLd={jsonLd}
+>
+  <div class="container cv-page">
+    <header class="cv-header">
+      <div>
+        <h1 class="cv-name">{person.name}</h1>
+        <p class="cv-headline">{person.headline}</p>
+      </div>
+      <div class="cv-contact">
+        <a href={`mailto:${person.email}`}>{person.email}</a>
+        <a href={person.linkedinUrl} target="_blank" rel="noopener noreferrer">
+          {person.linkedinUrl.replace("https://www.", "")}
+        </a>
+        <a href={person.githubUrl} target="_blank" rel="noopener noreferrer">
+          {person.githubUrl.replace("https://", "")}
+        </a>
+        <span>{person.location}</span>
+        <span>Updated {updated}</span>
+      </div>
+    </header>
+
+    <div class="cv-actions">
+      <button class="btn btn-primary" id="print-cv" type="button">
+        <Icon name="printer" />
+        Print / Save as PDF
+      </button>
+      <a class="btn btn-secondary" href="/">← Back to site</a>
+    </div>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Profile</h2>
+      <p>{person.professionalSummary}</p>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Experience</h2>
+      {
+        experience.items.map((item) => (
+          <div>
+            <div class="cv-role">
+              <h3>
+                {item.role} · {item.company}
+              </h3>
+              <span>{item.period}</span>
+            </div>
+            {item.location && <p class="cv-location">{item.location}</p>}
+            {item.summary && <p>{item.summary}</p>}
+            {item.highlights.length > 0 && (
+              <ul class="cv-list">
+                {item.highlights.map((highlight) => (
+                  <li>{highlight}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Education</h2>
+      <div class="cv-grid">
+        {
+          education.items.map((item) => (
+            <div>
+              <p class="cv-item-title">{item.degree}</p>
+              <p class="cv-item-meta">
+                {item.institution} · {item.period}
+              </p>
+              <p class="cv-item-meta">GPA {item.gpa}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Certifications</h2>
+      <div class="cv-grid">
+        {
+          certifications.map((item) => (
+            <div>
+              <p class="cv-item-title">{item.title}</p>
+              <p class="cv-item-meta">
+                {item.issuer} · {item.date}
+              </p>
+              <p class="cv-item-meta">Credential {item.credentialId}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Selected projects</h2>
+      <div class="cv-grid">
+        {
+          featured.map((repo) => (
+            <div>
+              <p class="cv-item-title">{repo.name}</p>
+              <p class="cv-item-meta">{projectMeta(repo)}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Toolkit</h2>
+      <div class="toolkit-list">
+        {
+          groups.map((group) => (
+            <div class="toolkit-row">
+              <span class="toolkit-layer">{group.layer}</span>
+              <div class="toolkit-items">
+                {group.tools.map((tool) => (
+                  <span class="tag">{tool}</span>
+                ))}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+
+  <script is:inline>
+    document.getElementById("print-cv")?.addEventListener("click", () => {
+      window.print();
+    });
+  </script>
+</BaseLayout>

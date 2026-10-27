@@ -1,39 +1,76 @@
 ---
-import { CommentSection } from "@/components/CommentSection";
-import { Separator } from "@/components/ui/separator";
-import MainLayout from "@/layouts/MainLayout.astro";
-import { getImageByPath } from "@/lib/utils";
+import { getCollection, render } from "astro:content";
 import type { GetStaticPaths } from "astro";
-import { Image } from "astro:assets";
-import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { formatDate, readingTime } from "@/lib/format";
+import site from "@/data/site.json";
 
 export const getStaticPaths = (async () => {
-  const blogs = await getCollection("blog");
-  return blogs.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
   }));
 }) satisfies GetStaticPaths;
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
-const { title, description } = entry.data;
+const { post } = Astro.props;
+const { Content } = await render(post);
+const date = post.data.date;
+const postUrl = new URL(`/blog/${post.id}`, site.meta.url).href;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: date?.toISOString(),
+  author: {
+    "@type": "Person",
+    name: site.person.name,
+    url: site.meta.url,
+  },
+  mainEntityOfPage: postUrl,
+  image: new URL("/og.png", site.meta.url).href,
+  publisher: {
+    "@type": "Organization",
+    name: "chadinasser.dev",
+    url: site.meta.url,
+  },
+};
 ---
 
-<MainLayout>
-  <div class="flex flex-col">
-    <div class="text-center py-8 ~mt-10/20">
-      <h1 class="~text-3xl/6xl font-bold">
-        {title}
-      </h1>
-      <h2 class="text-muted-foreground ~text-lg/xl mt-2">
-        {description}
-      </h2>
+<BaseLayout
+  title={`${post.data.title} — Chadi Nasser`}
+  description={post.data.description ??
+    "Notes on backend engineering, infrastructure, and tools by Chadi Nasser."}
+  type="article"
+  publishedTime={date?.toISOString()}
+  jsonLd={jsonLd}
+>
+  <header class="page-header">
+    <div class="container">
+      <span class="page-kicker">Writing</span>
+      <h1 class="page-title">{post.data.title}</h1>
+      {post.data.description && <p class="page-intro">{post.data.description}</p>}
+      <div class="post-meta">
+        {date && <span>{formatDate(date)}</span>}
+        {post.body && <span>{readingTime(post.body)}</span>}
+        <span>Chadi Nasser</span>
+      </div>
     </div>
-    <div class="text-xl prose dark:prose-invert max-w-none mt-8">
-      <Content />
+  </header>
+
+  <article class="page-section">
+    <div class="container">
+      <div class="prose">
+        <Content />
+      </div>
+      <div class="post-footer">
+        <a class="btn btn-secondary" href="/blog">← All writing</a>
+        <a class="btn btn-primary" href={`mailto:${site.person.email}`}>
+          Email me
+        </a>
+      </div>
     </div>
-    <Separator className="my-8" />
-    <CommentSection client:only="react" />
-  </div>
-</MainLayout>
+  </article>
+</BaseLayout>

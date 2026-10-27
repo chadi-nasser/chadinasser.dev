@@ -1,0 +1,600 @@
+{
+  "meta": {
+    "extractedFrom": "https://chadinasser.dev",
+    "extractedAt": "2026-10-27",
+    "siteName": "chadinasser.dev",
+    "siteDescription": "Backend and DevOps engineer in Tripoli, Lebanon. Java, Spring Boot, Docker, Kubernetes, and AWS.",
+    "url": "https://chadinasser.dev",
+    "language": "en",
+    "author": "Chadi Nasser",
+    "copyright": "© 2026 Chadi. All rights reserved.",
+    "linkedinCheckedAt": "2026-10-27",
+    "notes": [
+      "Content was extracted from the live site, the GitHub API, and the public LinkedIn profile, then updated for the Carbon-inspired redesign.",
+      "LinkedIn blocks direct scraping. The linkedin section was populated from the public indexed profile at linkedin.com/in/chadi-nasser-08b073227 on 2026-10-27.",
+      "The education note records a discrepancy between the site's records and LinkedIn's public snapshot. Verify it before publishing.",
+      "The CV at /cv is generated from this file. The blog collection is the source of truth for post bodies."
+    ]
+  },
+  "person": {
+    "name": "Chadi Nasser",
+    "handle": "chadi-nasser",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/36199976?v=4",
+    "githubUrl": "https://github.com/chadi-nasser",
+    "bio": "I like to code sometimes, and sometimes I code. 😐",
+    "currentGithubBio": "The true art of learning 🎨 begins when you master the skill of learning how to learn 📚✨.",
+    "headline": "Software Developer | Java & Spring Boot | Backend Systems",
+    "title": "Mid-Level Software Developer at Sword Group",
+    "currentRole": "Mid-Level Software Developer",
+    "currentCompany": "Sword Group",
+    "professionalSummary": "Software Developer, focusing on web development and performance optimization. Core competencies include DevOps practices, containerization with Docker, and orchestration using Kubernetes.",
+    "location": "Tripoli, North Governorate, Lebanon",
+    "country": "Lebanon",
+    "timezone": "GMT+2 / GMT+3",
+    "email": "hello@chadinasser.dev",
+    "hireable": true,
+    "linkedinUrl": "https://www.linkedin.com/in/chadi-nasser-08b073227/",
+    "linkedinStats": {
+      "connections": 169,
+      "followers": 170
+    },
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/chadi-nasser"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/chadi-nasser-08b073227/"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:hello@chadinasser.dev"
+      }
+    ]
+  },
+  "hero": {
+    "greeting": "👋",
+    "intro": "Hey there, this is me",
+    "title": "Chadi Nasser",
+    "tagline": "Software Developer | Java & Spring Boot | Backend Systems",
+    "currentRole": "Mid-Level Software Developer at Sword Group",
+    "location": "Tripoli, Lebanon",
+    "avatarFlip": true
+  },
+  "about": {
+    "title": "About Me",
+    "description": "A little bit about myself",
+    "paragraph": "Detail-oriented Software Developer with 3+ years of experience building and scaling backend systems using Java and the Spring Framework. Currently a Mid-Level Software Developer at Sword Group in Tripoli, Lebanon. Proficient in full-stack development, containerization with Docker, and orchestration with Kubernetes, with a strong foundation in modern frontend technologies and low-level systems programming. Possesses a proven track record of developing complex web applications and RESTful APIs."
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "Professional background",
+    "items": [
+      {
+        "role": "Mid-Level Software Developer",
+        "company": "Sword Group",
+        "period": "Nov 2025 – Present",
+        "location": "Tripoli, North Governorate, Lebanon",
+        "current": true,
+        "summary": "Building backend and web systems with Java and Spring Boot.",
+        "highlights": [
+          "Applying DevOps practices, containerization with Docker, and orchestration with Kubernetes.",
+          "Focusing on web performance optimization and scalable solutions."
+        ]
+      },
+      {
+        "role": "Software Engineer",
+        "company": "Lebanon AutoTrade",
+        "period": "Jul 2021 – 2025",
+        "location": "Mejdlaiya, North Governorate, Lebanon",
+        "current": false,
+        "summary": "Building and evolving the core backend powering the lbauto.trade platform.",
+        "highlights": [
+          "Architected and implemented core Java/Spring Boot microservices exposing secure REST APIs.",
+          "Implemented stateless authentication (JWT) plus request rate limiting (Bucket4j).",
+          "Led migration MongoDB → MySQL; standardized schema versioning via Flyway.",
+          "Authored unit & integration tests (JUnit 5, Mockito) to safeguard critical business flows.",
+          "Set up CI/CD pipeline (Jenkins + Docker) and deployed backend services on AWS.",
+          "Introduced structured logging (SLF4J / Logback) improving production observability."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "description": "My academic background",
+    "items": [
+      {
+        "degree": "M.S. in Computer Science",
+        "period": "2023 – 2025",
+        "institution": "Lebanese International University",
+        "gpa": "3.96 / 4.0"
+      },
+      {
+        "degree": "B.S. in Computer Science",
+        "period": "2020 – 2023",
+        "institution": "Lebanese International University",
+        "gpa": "3.25 / 4.0"
+      }
+    ],
+    "linkedinNote": "The public indexed LinkedIn profile shows one Bachelor's degree ending 2025 with a grade of 3.3. The site lists an M.S. (2023–2025, GPA 3.96) and a B.S. (2020–2023, GPA 3.25). Verify before publishing."
+  },
+  "certifications": [
+    {
+      "title": "DevOps Capstone Project",
+      "issuer": "Simplilearn",
+      "date": "2024",
+      "credentialId": "7363068"
+    },
+    {
+      "title": "DevOps Engineer",
+      "issuer": "Simplilearn",
+      "date": "Sep 2024",
+      "credentialId": "117047272",
+      "verifyUrl": "https://success.simplilearn.com/de265c34-bc37-4e81-8eea-6a060bdcb69f"
+    },
+    {
+      "title": "CKA - Certified Kubernetes Administrator",
+      "issuer": "Simplilearn",
+      "date": "2024",
+      "credentialId": "7315387"
+    }
+  ],
+  "linkedin": {
+    "url": "https://www.linkedin.com/in/chadi-nasser-08b073227/",
+    "checkedAt": "2026-10-27",
+    "headline": "Software Developer | Java & Spring Boot | Backend Systems",
+    "location": "Tripoli, North Governorate, Lebanon",
+    "summary": "Software Developer, focusing on web development and performance optimization. Core competencies include DevOps practices, containerization with Docker, and orchestration using Kubernetes.",
+    "connections": 169,
+    "followers": 170,
+    "currentPosition": {
+      "company": "Sword Group",
+      "title": "Mid-Level Software Developer",
+      "startDate": "2025-11-01",
+      "location": "Tripoli, North Governorate, Lebanon"
+    },
+    "previousPositions": [
+      {
+        "company": "LebanonAutoTrade",
+        "title": null,
+        "startDate": "2021-07-01",
+        "endDate": null,
+        "location": "Mejdlaiya, North Governorate, Lebanon",
+        "current": false
+      }
+    ],
+    "certifications": [
+      "DevOps Capstone Project (Simplilearn, 2024)",
+      "DevOps Engineer (Simplilearn, Sep 2024)",
+      "CKA - Certified Kubernetes Administrator (Simplilearn, 2024)"
+    ]
+  },
+  "miscellaneous": {
+    "title": "Miscellaneous",
+    "description": "Some random facts about me",
+    "items": [
+      "👨‍💻 Enjoy building resilient backend & infrastructure tooling.",
+      "📚 Currently reading \"Charismatic Charlie Wade\" by Lord Leaf."
+    ]
+  },
+  "navigation": {
+    "brand": "chadinasser.dev",
+    "links": [
+      {
+        "label": "Projects",
+        "href": "/project"
+      },
+      {
+        "label": "Blogs",
+        "href": "/blog"
+      }
+    ],
+    "themeToggle": true
+  },
+  "footer": {
+    "copyright": "© {year} Chadi. All rights reserved.",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/chadi-nasser"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/chadi-nasser-08b073227/"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:hello@chadinasser.dev"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "",
+    "items": [
+      {
+        "title": "chadinasser.dev",
+        "description": "A personal website for myself.",
+        "image": "blog-placeholder-2.jpg",
+        "url": "https://chadinasser.dev",
+        "gitUrl": "https://github.com/chadi-nasser/chadinasser.dev"
+      }
+    ]
+  },
+  "github": {
+    "profile": {
+      "login": "chadi-nasser",
+      "name": "Chadi Nasser",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/36199976?v=4",
+      "url": "https://github.com/chadi-nasser",
+      "bio": "The true art of learning 🎨 begins when you master the skill of learning how to learn 📚✨.",
+      "hireable": true,
+      "publicRepos": 15,
+      "followers": 3,
+      "following": 2,
+      "createdAt": "2018-02-06T15:27:26Z"
+    },
+    "repositories": [
+      {
+        "name": "pocketpal-ai",
+        "kind": "AI app",
+        "description": "An app that brings language models directly to your phone.",
+        "language": null,
+        "repoUrl": "https://github.com/chadi-nasser/pocketpal-ai",
+        "homepage": null,
+        "createdAt": "2026-10-19T11:51:15Z",
+        "pushedAt": "2026-10-19T11:51:40Z"
+      },
+      {
+        "name": "spring-ecommerce-api",
+        "kind": "Java API",
+        "description": null,
+        "language": "Java",
+        "repoUrl": "https://github.com/chadi-nasser/spring-ecommerce-api",
+        "homepage": null,
+        "createdAt": "2025-09-08T23:20:57Z",
+        "pushedAt": "2025-09-28T22:55:36Z"
+      },
+      {
+        "name": "csci511-project",
+        "kind": "Java course project",
+        "description": null,
+        "language": "Java",
+        "repoUrl": "https://github.com/chadi-nasser/csci511-project",
+        "homepage": null,
+        "createdAt": "2025-07-26T14:38:56Z",
+        "pushedAt": "2025-07-26T14:38:59Z"
+      },
+      {
+        "name": "chadinasser.dev",
+        "kind": "Astro site",
+        "description": "My personal website",
+        "language": "Astro",
+        "repoUrl": "https://github.com/chadi-nasser/chadinasser.dev",
+        "homepage": "https://chadinasser.dev/",
+        "createdAt": "2024-10-06T00:03:06Z",
+        "pushedAt": "2025-08-20T13:57:25Z"
+      },
+      {
+        "name": "SimpleTerraformInfra",
+        "kind": "AWS",
+        "description": "Simple Terraform Infrastructure using AWS as provider. Objective of this project is to complete the DevOps Project assigned.",
+        "language": "Jinja",
+        "repoUrl": "https://github.com/chadi-nasser/SimpleTerraformInfra",
+        "homepage": null,
+        "createdAt": "2024-09-07T02:38:56Z",
+        "pushedAt": "2024-09-09T23:06:34Z"
+      },
+      {
+        "name": "SpringBootSimpleRestApi",
+        "kind": "Java API",
+        "description": "Simple REST API for Terraform Infra Demo.",
+        "language": "Java",
+        "repoUrl": "https://github.com/chadi-nasser/SpringBootSimpleRestApi",
+        "homepage": null,
+        "createdAt": "2024-09-06T21:25:02Z",
+        "pushedAt": "2024-09-09T23:36:57Z"
+      },
+      {
+        "name": "android_kernel_samsung_c2q",
+        "kind": "Android kernel",
+        "description": "Android Kernel for Samsung Note 20 Ultra 5G (c2q).",
+        "language": null,
+        "repoUrl": "https://github.com/chadi-nasser/android_kernel_samsung_c2q",
+        "homepage": null,
+        "createdAt": "2024-05-31T01:15:56Z",
+        "pushedAt": "2024-05-31T01:23:56Z"
+      },
+      {
+        "name": "android_device_samsung_c2q",
+        "kind": "Android",
+        "description": null,
+        "language": "Makefile",
+        "repoUrl": "https://github.com/chadi-nasser/android_device_samsung_c2q",
+        "homepage": null,
+        "createdAt": "2024-04-04T13:28:59Z",
+        "pushedAt": "2024-04-29T09:19:19Z"
+      },
+      {
+        "name": "chip-8-emulator",
+        "kind": "Rust",
+        "description": "A CHIP-8 emulator using rustlang",
+        "language": "Rust",
+        "repoUrl": "https://github.com/chadi-nasser/chip-8-emulator",
+        "homepage": null,
+        "createdAt": "2024-02-21T18:43:45Z",
+        "pushedAt": "2024-02-21T18:55:06Z"
+      },
+      {
+        "name": "trellone",
+        "kind": "Next.js app",
+        "description": "A Trello clone using Next.js 14 (Server Actions), Typescript, Tailwind CSS, Clerk and Stripe.",
+        "language": "TypeScript",
+        "repoUrl": "https://github.com/chadi-nasser/trellone",
+        "homepage": "https://trellone-nine.vercel.app",
+        "createdAt": "2024-02-19T13:30:28Z",
+        "pushedAt": "2024-02-21T23:32:57Z"
+      },
+      {
+        "name": "ecommerce-cms",
+        "kind": "Next.js app",
+        "description": null,
+        "language": "TypeScript",
+        "repoUrl": "https://github.com/chadi-nasser/ecommerce-cms",
+        "homepage": "https://ecommerce-cms-ehdl.vercel.app",
+        "createdAt": "2023-11-15T12:34:01Z",
+        "pushedAt": "2023-11-17T18:40:57Z"
+      },
+      {
+        "name": "ecommerce-store",
+        "kind": "Next.js app",
+        "description": null,
+        "language": "TypeScript",
+        "repoUrl": "https://github.com/chadi-nasser/ecommerce-store",
+        "homepage": "https://ecommerce-store-two-rosy.vercel.app",
+        "createdAt": "2023-11-15T12:31:26Z",
+        "pushedAt": "2023-11-16T00:09:16Z"
+      },
+      {
+        "name": "whatsapp-clone",
+        "kind": "Next.js app",
+        "description": "WhatsApp clone built with Next.js, Tailwind CSS, Socket.io, Prisma(PostgreSQL), and Firebase Auth.",
+        "language": "JavaScript",
+        "repoUrl": "https://github.com/chadi-nasser/whatsapp-clone",
+        "homepage": null,
+        "createdAt": "2023-10-23T20:49:33Z",
+        "pushedAt": "2023-10-23T20:57:05Z"
+      },
+      {
+        "name": "xvru-os",
+        "kind": "C",
+        "description": null,
+        "language": "C",
+        "repoUrl": "https://github.com/chadi-nasser/xvru-os",
+        "homepage": null,
+        "createdAt": "2023-03-19T09:30:03Z",
+        "pushedAt": "2023-05-17T15:03:02Z"
+      },
+      {
+        "name": "simple-erc721",
+        "kind": "Solidity",
+        "description": "Simple ERC-721 implementation using Solidity",
+        "language": "JavaScript",
+        "repoUrl": "https://github.com/chadi-nasser/simple-erc721",
+        "homepage": null,
+        "createdAt": "2023-01-05T19:48:16Z",
+        "pushedAt": "2023-01-05T20:25:32Z"
+      }
+    ]
+  },
+  "toolkit": [
+    {
+      "tool": "Java",
+      "layer": "Language",
+      "usedFor": "Services and APIs"
+    },
+    {
+      "tool": "Spring Boot",
+      "layer": "Framework",
+      "usedFor": "REST services"
+    },
+    {
+      "tool": "MySQL + Flyway",
+      "layer": "Data",
+      "usedFor": "Schema and migrations"
+    },
+    {
+      "tool": "MongoDB",
+      "layer": "Data",
+      "usedFor": "Document store"
+    },
+    {
+      "tool": "JWT + Bucket4j",
+      "layer": "Security",
+      "usedFor": "Auth and rate limits"
+    },
+    {
+      "tool": "JUnit 5 + Mockito",
+      "layer": "Quality",
+      "usedFor": "Unit and integration tests"
+    },
+    {
+      "tool": "Docker",
+      "layer": "Infrastructure",
+      "usedFor": "Container builds"
+    },
+    {
+      "tool": "Jenkins",
+      "layer": "CI/CD",
+      "usedFor": "Build and deploy pipelines"
+    },
+    {
+      "tool": "AWS",
+      "layer": "Cloud",
+      "usedFor": "Backend deployments"
+    },
+    {
+      "tool": "SLF4J + Logback",
+      "layer": "Observability",
+      "usedFor": "Structured logs"
+    },
+    {
+      "tool": "Linux",
+      "layer": "Systems",
+      "usedFor": "Daily driver"
+    },
+    {
+      "tool": "Astro",
+      "layer": "Web",
+      "usedFor": "This page"
+    }
+  ],
+  "contact": {
+    "title": "Contact",
+    "location": "Tripoli, Lebanon · GMT+2 / GMT+3",
+    "availability": "Open to work",
+    "rows": [
+      {
+        "label": "Say hello",
+        "url": "mailto:hello@chadinasser.dev"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/chadi-nasser"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/chadi-nasser-08b073227/"
+      },
+      {
+        "label": "Tripoli, Lebanon · GMT+2 / GMT+3",
+        "url": null
+      },
+      {
+        "label": "Open to work",
+        "url": "https://www.linkedin.com/in/chadi-nasser-08b073227/"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blogs",
+    "posts": [
+      {
+        "slug": "chadinasser.dev",
+        "livePath": "/blog/chadinasserdev",
+        "title": "From React to Astro 🚀",
+        "description": "My journey transitioning from React to Astro",
+        "image": "blog-placeholder-2.jpg",
+        "body": "## The Three.js Experiment\n\nAt the start of my web development journey, I learned React and some associated libraries. One day, I discovered Three.js and was impressed by how awesome it looked on other websites. Excited to learn, I took a course that involved creating a portfolio website with Three.js.\n\nHowever, after completing the project, I realized that while Three.js is cool, it comes with a cost: tons of JavaScript and 3D model downloads. As a backend developer who prioritizes fast and efficient apps, I felt that having a few animations and 3D objects wasn't worth the performance trade-off. Consequently, I scrapped the project without even pushing it to GitHub.\n\n## The Alpine.js Venture\n\nLater, I heard about HTMX and similar web frameworks aimed at minimizing JavaScript and creating very fast apps. Inspired by this approach, I decided to create my website from scratch using Alpine.js. No external designs, no extra libraries—just Alpine and my own code.\n\nI challenged myself by choosing to create a terminal-like design with a fully working shell emulation in JavaScript using Alpine. However, as I encountered various problems and got busy with my master's projects, I unintentionally abandoned this project too.\n\n## The Astro Discovery\n\nA few weeks ago, fate intervened when a web developer's portfolio caught my eye on my timeline. I was immediately drawn to its simple yet catchy design, responsiveness, and speed. Although I couldn't find the source code or identify the libraries used, it inspired me to create something similar.\n\nInitially, I considered using React, but I knew it wasn't the best choice for static websites like portfolios. After some research, I discovered Astro—a framework I'd heard of but never explored. It turned out that Astro was perfect for my needs.\n\n## The Final Stack\n\nFor my website, I settled on the following tech stack:\n\n- Astro (main framework)\n- React (for components)\n- Tailwind CSS (for styling)\n- shadcn/ui (UI components)\n- Various Tailwind CSS plugins\n\nThis combination worked seamlessly, allowing me to replicate the design that inspired me while adding my own touches.\n\n## Conclusion\n\nAfter replicating the design and adding my personal touch, I was ready to deploy the website along with this blog post describing my journey. While this site might be replaced in the future, it deserves celebration for being deployed—otherwise, it would have been just another scrapped project in my portfolio.\n\nThis experience taught me the value of exploring different frameworks and finding the right tools for specific needs. It also reinforced the importance of perseverance in web development, as each \"failed\" project contributed to my learning and ultimately led to a successful outcome."
+      }
+    ]
+  },
+  "comments": {
+    "provider": "giscus",
+    "repo": "chadi-nasser/chadinasser.dev",
+    "repoId": "R_kgDOM8DYAA",
+    "mapping": "url",
+    "category": "Comments",
+    "categoryId": "DIC_kwDOM8DYAM4CjPbo",
+    "reactionsEnabled": true,
+    "inputPosition": "bottom",
+    "theme": "preferred_color_scheme",
+    "lang": "en",
+    "loading": "lazy"
+  },
+  "errorPages": {
+    "404": {
+      "emoji": "🤔",
+      "code": 404,
+      "message": "It seems you're lost"
+    },
+    "500": {
+      "emoji": "💀",
+      "code": 500,
+      "message": "Internal Server Error"
+    }
+  },
+  "media": {
+    "avatarUrl": "https://avatars.githubusercontent.com/u/36199976?v=4",
+    "defaultImage": "src/assets/default.jpg",
+    "flipAvatarBack": "src/assets/flip-avatar/back.jpg",
+    "archivalPhotos": [
+      {
+        "file": "assets/pigeon-rocks-beirut-lebanon-loc-matpc-13089.jpg",
+        "title": "Pigeon Rocks, Beirut, Lebanon LOC matpc.13089",
+        "creator": "Matson Collection",
+        "date": "1925",
+        "license": "public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Pigeon_Rocks,_Beirut,_Lebanon_LOC_matpc.13089.tif",
+        "via": "Wikimedia Commons",
+        "credit": "\"Pigeon Rocks, Beirut, Lebanon LOC matpc.13089\" by Matson Collection, public domain, via Wikimedia Commons"
+      },
+      {
+        "file": "assets/lebanon-bshirre-and-road-to-cedars-lccn2006691711.jpg",
+        "title": "Lebanon. Bshirre and road to Cedars LCCN2006691711",
+        "creator": "American Colony (Jerusalem). Photo Department, photographer",
+        "date": "between 1900 and 1930",
+        "license": "public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Lebanon._Bshirre_and_road_to_Cedars_LCCN2006691711.jpg",
+        "via": "Wikimedia Commons",
+        "credit": "\"Lebanon. Bshirre and road to Cedars LCCN2006691711\" by American Colony (Jerusalem). Photo Department, photographer, public domain, via Wikimedia Commons"
+      }
+    ]
+  },
+  "sourceMap": [
+    {
+      "file": "src/data/site.json",
+      "contains": "Canonical profile, experience, education, certifications, toolkit, projects, contact and media credits"
+    },
+    {
+      "file": "src/pages/index.astro",
+      "contains": "Homepage composition"
+    },
+    {
+      "file": "src/pages/projects.astro",
+      "contains": "Projects page"
+    },
+    {
+      "file": "src/pages/cv.astro",
+      "contains": "Print-friendly CV"
+    },
+    {
+      "file": "src/content/blog/from-react-to-astro.md",
+      "contains": "Blog post frontmatter and body"
+    },
+    {
+      "file": "src/styles/global.css",
+      "contains": "Carbon-inspired tokens, typography and layout"
+    },
+    {
+      "file": "src/assets/avatar.png",
+      "contains": "Profile avatar from GitHub"
+    },
+    {
+      "file": "assets/pigeon-rocks-beirut-lebanon-loc-matpc-13089.jpg",
+      "contains": "Archival photo used on the homepage"
+    },
+    {
+      "file": "assets/credits.json",
+      "contains": "Archival photo credits"
+    },
+    {
+      "file": "https://api.github.com/users/chadi-nasser",
+      "contains": "Live name, avatar, bio and profile stats"
+    },
+    {
+      "file": "https://api.github.com/users/chadi-nasser/repos",
+      "contains": "Repository list with languages, descriptions and URLs"
+    },
+    {
+      "file": "https://www.linkedin.com/in/chadi-nasser-08b073227/",
+      "contains": "Current role at Sword Group, headline, summary, location, education and certifications"
+    },
+    {
+      "file": "design/carbon-design.md",
+      "contains": "Carbon design reference"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+---
+import SectionHeader from "@/components/SectionHeader.astro";
+
+interface ExperienceItem {
+  role: string;
+  company: string;
+  period: string;
+  location?: string;
+  current?: boolean;
+  summary?: string;
+  highlights: string[];
+}
+
+interface Props {
+  items: ExperienceItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="section" id="work">
+  <div class="container">
+    <SectionHeader
+      kicker="02 / Experience"
+      title="Where I've worked"
+      intro="Backend engineering with a production mindset: secure APIs, reliable data, and pipelines that ship without drama."
+    />
+
+    <div class="experience-list">
+      {
+        items.map((item) => (
+          <article class="experience-item">
+            <div class="experience-head">
+              <h3 class="experience-role">
+                {item.role}{" "}
+                <span class="experience-company">· {item.company}</span>
+              </h3>
+              <span class="experience-period">{item.period}</span>
+            </div>
+            {item.location && (
+              <p class="experience-location">{item.location}</p>
+            )}
+            {item.summary && <p class="experience-summary">{item.summary}</p>}
+            {item.highlights.length > 0 && (
+              <ul class="highlight-list">
+                {item.highlights.map((highlight) => (
+                  <li>{highlight}</li>
+                ))}
+              </ul>
+            )}
+            {item.current && (
+              <div class="toolkit-items">
+                <span class="tag">Current</span>
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Backend systems</span>
+              </div>
+            )}
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,33 +1,88 @@
 ---
-import FlipAvatar from "./FlipAvatar.astro";
+import { Image } from "astro:assets";
+import avatar from "@/assets/avatar.png";
+import Icon from "@/components/Icon.astro";
+import site from "@/data/site.json";
 
-import { GITHUB_USERNAME } from "@/consts.ts";
-
-const userInfo = await fetch(
-  `https://api.github.com/users/${GITHUB_USERNAME}`
-).then((res) => res.json());
+const { person, experience } = site;
+const current = experience.items[0];
 ---
 
-<div class="mt-12 flex flex-col sm:flex-row-reverse gap-6">
-  <div class="mx-auto size-48 sm:size-64 mb-4 sm:mb-0 sm:h-auto">
-    <FlipAvatar githubImage={userInfo?.avatar_url} />
-  </div>
-  <div class="p-6 border bg-card rounded-xl w-full">
-    <span class="inline-block text-3xl animate-wiggle">👋</span>
-    <p class="inline-block text-muted-foreground ~text-xl/3xl">
-      Hey there, this is me
-    </p>
-    <h1 class="~text-5xl/6xl font-semibold pt-1 pb-3 text-primary">
-      {userInfo?.name ? userInfo.name : "Unknown User"}
-    </h1>
-    <div class="text-muted-foreground ~text-lg/xl flex flex-col items-start">
-      {
-        userInfo?.bio ? (
-          <q class="hyphens-auto">{userInfo.bio}</q>
-        ) : (
-          "Error 404! Bio not found."
-        )
-      }
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="status">
+        <span class="status-dot" aria-hidden="true"></span>
+        {site.contact.availability} · Backend &amp; DevOps
+      </p>
+      <h1 class="hero-title">{person.name}</h1>
+      <p class="hero-subtitle">{person.headline}</p>
+      <p class="hero-line">
+        I build Java and Spring Boot backend systems, ship them with Docker and
+        Jenkins, and keep them observable in production. Currently a {current.role}{" "}
+        at {current.company}.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href={`mailto:${person.email}`}>
+          <Icon name="mail" />
+          Email me
+        </a>
+        <a class="btn btn-secondary" href="/cv">
+          <Icon name="file" />
+          View CV
+        </a>
+        <a
+          class="btn btn-ghost"
+          href={person.linkedinUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+          <Icon name="arrow-up-right" />
+        </a>
+      </div>
     </div>
+
+    <aside class="hero-card" aria-label="Profile summary">
+      <div class="hero-card-head">
+        <Image
+          src={avatar}
+          alt={person.name}
+          width={128}
+          height={128}
+          format="webp"
+          loading="eager"
+          class="avatar"
+        />
+        <div>
+          <p class="hero-card-name">{person.name}</p>
+          <p class="hero-card-role">{person.title}</p>
+        </div>
+      </div>
+      <dl class="fact-list">
+        <div class="fact">
+          <dt class="fact-label">Now</dt>
+          <dd class="fact-value">{current.company}</dd>
+        </div>
+        <div class="fact">
+          <dt class="fact-label">Based</dt>
+          <dd class="fact-value">{person.location}</dd>
+        </div>
+        <div class="fact">
+          <dt class="fact-label">Focus</dt>
+          <dd class="fact-value">Java, Spring Boot, DevOps</dd>
+        </div>
+        <div class="fact">
+          <dt class="fact-label">Certified</dt>
+          <dd class="fact-value">CKA, DevOps Engineer</dd>
+        </div>
+        <div class="fact">
+          <dt class="fact-label">Email</dt>
+          <dd class="fact-value">
+            <a href={`mailto:${person.email}`}>{person.email}</a>
+          </dd>
+        </div>
+      </dl>
+    </aside>
   </div>
-</div>
+</section>

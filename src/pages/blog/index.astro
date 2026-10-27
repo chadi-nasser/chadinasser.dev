@@ -1,19 +1,53 @@
 ---
-import CustomCard from "@/components/CustomCard.astro";
-import { Button } from "@/components/ui/button";
-import ContentLayout from "@/layouts/ContentLayout.astro";
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import WritingList from "@/components/WritingList.astro";
+import site from "@/data/site.json";
 
-const blogs = await getCollection('blog');
+const posts = (await getCollection("blog")).sort((a, b) => {
+  const aDate = a.data.date?.getTime() ?? 0;
+  const bDate = b.data.date?.getTime() ?? 0;
+  return bDate - aDate;
+});
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: "Writing — Chadi Nasser",
+  description: "Notes on backend engineering, infrastructure, and tools.",
+  url: new URL("/blog", site.meta.url).href,
+  author: {
+    "@type": "Person",
+    name: site.person.name,
+  },
+};
 ---
-<ContentLayout title="blogs">
-  {blogs.length ? <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
-    {blogs.map(({data: {title, description, image}, slug}: CollectionEntry<'blog'>) => (
-      <CustomCard title={title} description={description} image={image}>
-        <a href={`/blog/${slug}`} class="flex-1">
-          <Button variant="outline" className='w-full'><span class="icon-[lucide--book-open] size-4 mr-2"></span>Read</Button>
-        </a>
-      </CustomCard>
-    )
-  )}</ul> : null}
-</ContentLayout>
+
+<BaseLayout
+  title="Writing — Chadi Nasser"
+  description="Notes on backend engineering, infrastructure, and tools by Chadi Nasser."
+  jsonLd={jsonLd}
+>
+  <header class="page-header">
+    <div class="container">
+      <span class="page-kicker">Writing</span>
+      <h1 class="page-title">Notes from the work</h1>
+      <p class="page-intro">
+        Occasional writing about the tools, trade-offs, and detours behind the
+        projects.
+      </p>
+    </div>
+  </header>
+
+  <section class="page-section">
+    <div class="container">
+      {
+        posts.length > 0 ? (
+          <WritingList posts={posts} />
+        ) : (
+          <p class="ledger-note">No posts yet. The first one is in progress.</p>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

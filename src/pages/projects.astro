@@ -1,0 +1,60 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ProjectsLedger from "@/components/ProjectsLedger.astro";
+import site from "@/data/site.json";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Projects — Chadi Nasser",
+  description: "Public repositories and selected work by Chadi Nasser.",
+  url: new URL("/projects", site.meta.url).href,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: site.github.repositories.map((repo, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: repo.name,
+      url: repo.repoUrl,
+    })),
+  },
+};
+---
+
+<BaseLayout
+  title="Projects — Chadi Nasser"
+  description="Backend services, infrastructure experiments, and low-level projects by Chadi Nasser."
+  jsonLd={jsonLd}
+>
+  <header class="page-header">
+    <div class="container">
+      <span class="page-kicker">Repositories</span>
+      <h1 class="page-title">Projects</h1>
+      <p class="page-intro">
+        Backend services, infrastructure experiments, and low-level detours.
+        Every project here is public on GitHub.
+      </p>
+      <div class="hero-actions">
+        <a
+          class="btn btn-primary"
+          href="https://github.com/chadi-nasser"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View GitHub profile
+        </a>
+        <a class="btn btn-secondary" href="/cv">View CV</a>
+      </div>
+    </div>
+  </header>
+
+  <ProjectsLedger
+    projects={site.github.repositories}
+    kicker="All repositories"
+    title="Public work"
+    intro={`${site.github.profile.publicRepos} repositories across Java, TypeScript, Rust, C, and infrastructure.`}
+    showDescriptions
+    showNote={false}
+    total={site.github.profile.publicRepos}
+  />
+</BaseLayout>

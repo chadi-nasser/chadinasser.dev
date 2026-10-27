@@ -1,95 +1,119 @@
 ---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import About from "@/components/About.astro";
+import Contact from "@/components/Contact.astro";
+import Credentials from "@/components/Credentials.astro";
+import Experience from "@/components/Experience.astro";
 import Hero from "@/components/Hero.astro";
-import Section from "@/components/Section.astro";
-import MainLayout from "@/layouts/MainLayout.astro";
+import PhotoBand from "@/components/PhotoBand.astro";
+import ProjectsLedger from "@/components/ProjectsLedger.astro";
+import ProofStrip from "@/components/ProofStrip.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import Toolkit from "@/components/Toolkit.astro";
+import WritingList from "@/components/WritingList.astro";
+import site from "@/data/site.json";
+
+const posts = (await getCollection("blog")).sort((a, b) => {
+  const aDate = a.data.date?.getTime() ?? 0;
+  const bDate = b.data.date?.getTime() ?? 0;
+  return bDate - aDate;
+});
+
+const featuredNames = [
+  "spring-ecommerce-api",
+  "chadinasser.dev",
+  "chip-8-emulator",
+  "SimpleTerraformInfra",
+  "pocketpal-ai",
+  "xvru-os",
+];
+
+const featured = featuredNames
+  .map((name) => site.github.repositories.find((repo) => repo.name === name))
+  .filter((repo): repo is (typeof site.github.repositories)[number] =>
+    Boolean(repo),
+  );
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: site.person.name,
+    jobTitle: site.person.headline,
+    description: site.person.professionalSummary,
+    image: site.person.avatarUrl,
+    url: site.meta.url,
+    worksFor: {
+      "@type": "Organization",
+      name: site.person.currentCompany,
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Tripoli",
+      addressRegion: "North Governorate",
+      addressCountry: "LB",
+    },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: site.education.items[0].institution,
+    },
+    sameAs: [site.person.githubUrl, site.person.linkedinUrl],
+    knowsAbout: [
+      "Java",
+      "Spring Boot",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Jenkins",
+      "Terraform",
+      "Linux",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: site.meta.siteName,
+    url: site.meta.url,
+    description: site.meta.siteDescription,
+    inLanguage: "en",
+    author: {
+      "@type": "Person",
+      name: site.person.name,
+    },
+  },
+];
 ---
 
-<MainLayout>
+<BaseLayout
+  title="Chadi Nasser — Backend & DevOps Engineer"
+  description="Chadi Nasser is a backend and DevOps engineer in Tripoli, Lebanon. Java, Spring Boot, Docker, Kubernetes, and AWS."
+  jsonLd={jsonLd}
+>
   <Hero />
-  <Section title="About Me" description="A little bit about myself">
-    <p>
-      Detail-oriented Certified DevOps Engineer and Software Developer with 3+
-      years of experience specializing in building and scaling backend systems
-      using Java and the Spring Framework. Proficient in full-stack development
-      and containerization, with a strong foundation in modern frontend
-      technologies and low-level systems programming. Possesses a proven track
-      record of developing complex web applications and RESTful APIs.
-    </p>
-  </Section>
-
-  <Section title="Experience" description="Professional background">
-    <ul class="[&_li]:py-1 [&_li]:space-y-2">
-      <li>
-        <div
-          class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1"
-        >
-          <h3 class="font-semibold">Software Engineer · Lebanon AutoTrade</h3>
-          <p class="text-sm text-muted-foreground">Jul 2021 – Present</p>
-        </div>
-        <p class="text-sm text-muted-foreground">
-          Building and evolving the core backend powering the lbauto.trade
-          platform.
-        </p>
-        <ul class="text-base space-y-1 [&>li:before]:content-['▹']">
-          <li>
-            Architected and implemented core Java/Spring Boot microservices
-            exposing secure REST APIs.
-          </li>
-          <li>
-            Implemented stateless authentication (JWT) plus request rate
-            limiting (Bucket4j).
-          </li>
-          <li>
-            Led migration MongoDB → MySQL; standardized schema versioning via
-            Flyway.
-          </li>
-          <li>
-            Authored unit & integration tests (JUnit 5, Mockito) to safeguard
-            critical business flows.
-          </li>
-          <li>
-            Set up CI/CD pipeline (Jenkins + Docker) and deployed backend
-            services on AWS.
-          </li>
-          <li>
-            Introduced structured logging (SLF4J / Logback) improving production
-            observability.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </Section>
-
-  <Section title="Education" description="My academic background">
-    <ul class="[&_li]:py-3 [&_li]:space-y-2 [&_li]:border-t">
-      <li>
-        <div class="flex justify-between">
-          <h3 class="font-semibold">M.S. in Computer Science</h3>
-          <p>2023 – 2025</p>
-        </div>
-        <p class="flex justify-between">
-          Lebanese International University <span>GPA: 3.96 / 4.0</span>
-        </p>
-      </li>
-      <li>
-        <div class="flex justify-between">
-          <h3 class="font-semibold">B.S. in Computer Science</h3>
-          <p>2020 – 2023</p>
-        </div>
-        <p class="flex justify-between">
-          Lebanese International University <span>GPA: 3.25 / 4.0</span>
-        </p>
-      </li>
-    </ul>
-  </Section>
-
-  <Section title="Miscellaneous" description="Some random facts about me">
-    <ul class="list-disc list-inside">
-      <li>👨‍💻 Enjoy building resilient backend & infrastructure tooling.</li>
-      <li>
-        📚 Currently reading <q>Charismatic Charlie Wade</q> by <i>Lord Leaf</i
-        >.
-      </li>
-    </ul>
-  </Section>
-</MainLayout>
+  <ProofStrip />
+  <About />
+  <Experience items={site.experience.items} />
+  <ProjectsLedger
+    projects={featured}
+    limit={6}
+    total={site.github.profile.publicRepos}
+  />
+  <PhotoBand />
+  <Credentials
+    education={site.education}
+    certifications={site.certifications}
+  />
+  <section class="section" id="writing">
+    <div class="container">
+      <SectionHeader
+        kicker="05 / Writing"
+        title="Notes from the work"
+        intro="Occasional writing about the tools, trade-offs, and detours behind the projects."
+      />
+      <WritingList posts={posts} />
+    </div>
+  </section>
+  <Toolkit items={site.toolkit} />
+  <Contact />
+</BaseLayout>

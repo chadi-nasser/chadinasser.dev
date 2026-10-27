@@ -1,0 +1,48 @@
+---
+import SectionHeader from "@/components/SectionHeader.astro";
+import site from "@/data/site.json";
+
+const education = site.education.items[0];
+---
+
+<section class="section" id="about">
+  <div class="container">
+    <SectionHeader
+      kicker="01 / About"
+      title="Backend systems, built to stay up."
+      intro="The short version: I care about services that are fast, observable, and boring to operate."
+    />
+
+    <div class="about-grid">
+      <dl class="about-facts">
+        <div>
+          <dt>Based</dt>
+          <dd>{site.person.location}</dd>
+        </div>
+        <div>
+          <dt>Current</dt>
+          <dd>{site.person.currentRole} at {site.person.currentCompany}</dd>
+        </div>
+        <div>
+          <dt>Focus</dt>
+          <dd>Java, Spring Boot, DevOps</dd>
+        </div>
+        <div>
+          <dt>Education</dt>
+          <dd>{education.degree}, GPA {education.gpa}</dd>
+        </div>
+      </dl>
+
+      <div class="about-copy">
+        <p>{site.about.paragraph}</p>
+        <p>
+          Off the clock I read, break my phone with custom kernels, and write
+          about the tools I use.
+        </p>
+        <p class="about-now">
+          Currently reading <cite>Charismatic Charlie Wade</cite> by Lord Leaf.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

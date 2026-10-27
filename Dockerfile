@@ -1,9 +1,11 @@
-FROM node:lts AS build
+FROM node:24-alpine AS build
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
+ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+RUN corepack enable
+COPY package.json pnpm-lock.yaml ./
+RUN corepack pnpm install --frozen-lockfile
 COPY . .
-RUN npm run build
+RUN corepack pnpm build
 
 FROM nginx:alpine AS runtime
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf

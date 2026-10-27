@@ -1,8 +1,10 @@
 ---
 title: "From React to Astro 🚀"
 description: "My journey transitioning from React to Astro"
-image: "blog-placeholder-2.jpg"
+date: 2024-10-06
 ---
+
+> **Update (2026):** The site has since been rebuilt as a fully static Astro site with a Carbon-inspired design and no client-side framework JavaScript. The journey below is kept as originally written.
 
 ## The Three.js Experiment
 

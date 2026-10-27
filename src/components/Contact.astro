@@ -1,0 +1,50 @@
+---
+import Icon from "@/components/Icon.astro";
+import SectionHeader from "@/components/SectionHeader.astro";
+import site from "@/data/site.json";
+
+const { person, contact } = site;
+
+const rows = [
+  { label: "Say hello", href: `mailto:${person.email}`, external: false },
+  { label: "GitHub", href: person.githubUrl, external: true },
+  { label: "LinkedIn", href: person.linkedinUrl, external: true },
+];
+---
+
+<section class="section section--accent" id="contact">
+  <div class="container">
+    <SectionHeader
+      kicker="07 / Contact"
+      title="Let's talk"
+      intro="I'm open to backend, platform, and DevOps roles. The fastest way to reach me is email."
+    />
+
+    <div class="contact-list">
+      {
+        rows.map((row) => (
+          <a
+            class="contact-row"
+            href={row.href}
+            target={row.external ? "_blank" : undefined}
+            rel={row.external ? "noopener noreferrer" : undefined}
+          >
+            <span class="contact-label">{row.label}</span>
+            <Icon class="arrow" name="arrow-up-right" size={28} />
+          </a>
+        ))
+      }
+      <div class="contact-row contact-row--static">
+        <span class="contact-label">{person.location}</span>
+        <Icon class="arrow" name="location" size={28} />
+      </div>
+    </div>
+
+    <p class="contact-note">
+      <span class="status">
+        <span class="status-dot" aria-hidden="true"></span>
+        {contact.availability} · {person.timezone}
+      </span>
+    </p>
+  </div>
+</section>

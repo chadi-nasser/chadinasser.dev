@@ -6,8 +6,8 @@ import Contact from "@/components/Contact.astro";
 import Credentials from "@/components/Credentials.astro";
 import Experience from "@/components/Experience.astro";
 import Hero from "@/components/Hero.astro";
-import PhotoBand from "@/components/PhotoBand.astro";
 import ProjectsLedger from "@/components/ProjectsLedger.astro";
+import Research from "@/components/Research.astro";
 import ProofStrip from "@/components/ProofStrip.astro";
 import SectionHeader from "@/components/SectionHeader.astro";
 import Toolkit from "@/components/Toolkit.astro";
@@ -62,12 +62,25 @@ const jsonLd = [
     knowsAbout: [
       "Java",
       "Spring Boot",
+      "TypeScript",
+      "Rust",
+      "Python",
+      "PostgreSQL",
+      "Liquibase",
+      "Snowflake",
+      "JWT",
+      "OAuth2",
+      "OIDC",
+      "TOTP",
+      "Passkeys",
       "Docker",
       "Kubernetes",
       "AWS",
       "Jenkins",
       "Terraform",
       "Linux",
+      "AI",
+      "Embedding models",
     ],
   },
   {
@@ -86,8 +99,8 @@ const jsonLd = [
 ---
 
 <BaseLayout
-  title="Chadi Nasser — Backend & DevOps Engineer"
-  description="Chadi Nasser is a backend and DevOps engineer in Tripoli, Lebanon. Java, Spring Boot, Docker, Kubernetes, and AWS."
+  title="Chadi Nasser — Backend, DevOps & AI Engineer"
+  description="Chadi Nasser is a backend, DevOps, and AI engineer in Tripoli, Lebanon. 6+ years with Java, Spring Boot, security, data platforms, Docker, Kubernetes, and AWS."
   jsonLd={jsonLd}
 >
   <Hero />
@@ -99,15 +112,15 @@ const jsonLd = [
     limit={6}
     total={site.github.profile.publicRepos}
   />
-  <PhotoBand />
   <Credentials
     education={site.education}
     certifications={site.certifications}
   />
+  <Research />
   <section class="section" id="writing">
     <div class="container">
       <SectionHeader
-        kicker="05 / Writing"
+        kicker="06 / Writing"
         title="Notes from the work"
         intro="Occasional writing about the tools, trade-offs, and detours behind the projects."
       />

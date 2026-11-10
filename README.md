@@ -1,6 +1,6 @@
 # chadinasser.dev
 
-Personal portfolio of Chadi Nasser, a backend and DevOps engineer based in Tripoli, Lebanon.
+Personal portfolio of Chadi Nasser, a backend, DevOps, and AI engineer based in Tripoli, Lebanon.
 
 The site is a fully static Astro build with no tracking and no client-side framework JavaScript. The only script is a tiny print handler on the CV page. It uses a Carbon-inspired design system: IBM Plex Sans and Mono, an 8px spacing grid, 0px radii, and a single blue accent.
 

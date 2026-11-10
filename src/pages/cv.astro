@@ -3,36 +3,20 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Icon from "@/components/Icon.astro";
 import site from "@/data/site.json";
 
-const { person, education, experience, certifications, toolkit, github } = site;
+const { person, education, experience, certifications, research, toolkit } =
+  site;
+
 const updated = new Intl.DateTimeFormat("en", {
   month: "long",
   year: "numeric",
 }).format(new Date());
 
-const featuredNames = [
-  "spring-ecommerce-api",
-  "chadinasser.dev",
-  "chip-8-emulator",
-  "SimpleTerraformInfra",
-  "pocketpal-ai",
-];
-
-const featured = featuredNames
-  .map((name) => github.repositories.find((repo) => repo.name === name))
-  .filter((repo): repo is (typeof github.repositories)[number] =>
-    Boolean(repo),
-  );
-
-const projectMeta = (repo: (typeof github.repositories)[number]) =>
-  repo.language &&
-  !repo.kind.toLowerCase().includes(repo.language.toLowerCase())
-    ? `${repo.kind} · ${repo.language}`
-    : repo.kind;
-
 const layers = [...new Set(toolkit.map((item) => item.layer))];
 const groups = layers.map((layer) => ({
   layer,
-  tools: toolkit.filter((item) => item.layer === layer).map((item) => item.tool),
+  tools: toolkit
+    .filter((item) => item.layer === layer)
+    .map((item) => item.tool),
 }));
 
 const jsonLd = {
@@ -58,7 +42,7 @@ const jsonLd = {
 
 <BaseLayout
   title="CV — Chadi Nasser"
-  description="Curriculum vitae for Chadi Nasser, backend and DevOps engineer in Tripoli, Lebanon."
+  description="Curriculum vitae for Chadi Nasser, backend, DevOps, and AI engineer in Tripoli, Lebanon."
   jsonLd={jsonLd}
 >
   <div class="container cv-page">
@@ -75,6 +59,7 @@ const jsonLd = {
         <a href={person.githubUrl} target="_blank" rel="noopener noreferrer">
           {person.githubUrl.replace("https://", "")}
         </a>
+        <a href="https://chadinasser.dev">chadinasser.dev</a>
         <span>{person.location}</span>
         <span>Updated {updated}</span>
       </div>
@@ -97,7 +82,7 @@ const jsonLd = {
       <h2 class="cv-section-title">Experience</h2>
       {
         experience.items.map((item) => (
-          <div>
+          <div class="cv-role-block">
             <div class="cv-role">
               <h3>
                 {item.role} · {item.company}
@@ -105,7 +90,7 @@ const jsonLd = {
               <span>{item.period}</span>
             </div>
             {item.location && <p class="cv-location">{item.location}</p>}
-            {item.summary && <p>{item.summary}</p>}
+            {item.summary && <p class="cv-summary">{item.summary}</p>}
             {item.highlights.length > 0 && (
               <ul class="cv-list">
                 {item.highlights.map((highlight) => (
@@ -119,69 +104,57 @@ const jsonLd = {
     </section>
 
     <section class="cv-section">
-      <h2 class="cv-section-title">Education</h2>
-      <div class="cv-grid">
-        {
-          education.items.map((item) => (
-            <div>
-              <p class="cv-item-title">{item.degree}</p>
-              <p class="cv-item-meta">
-                {item.institution} · {item.period}
-              </p>
-              <p class="cv-item-meta">GPA {item.gpa}</p>
-            </div>
-          ))
-        }
-      </div>
-    </section>
-
-    <section class="cv-section">
-      <h2 class="cv-section-title">Certifications</h2>
-      <div class="cv-grid">
-        {
-          certifications.map((item) => (
-            <div>
-              <p class="cv-item-title">{item.title}</p>
-              <p class="cv-item-meta">
-                {item.issuer} · {item.date}
-              </p>
-              <p class="cv-item-meta">Credential {item.credentialId}</p>
-            </div>
-          ))
-        }
-      </div>
-    </section>
-
-    <section class="cv-section">
-      <h2 class="cv-section-title">Selected projects</h2>
-      <div class="cv-grid">
-        {
-          featured.map((repo) => (
-            <div>
-              <p class="cv-item-title">{repo.name}</p>
-              <p class="cv-item-meta">{projectMeta(repo)}</p>
-            </div>
-          ))
-        }
-      </div>
-    </section>
-
-    <section class="cv-section">
-      <h2 class="cv-section-title">Toolkit</h2>
-      <div class="toolkit-list">
+      <h2 class="cv-section-title">Skills</h2>
+      <div class="cv-skills">
         {
           groups.map((group) => (
-            <div class="toolkit-row">
-              <span class="toolkit-layer">{group.layer}</span>
-              <div class="toolkit-items">
-                {group.tools.map((tool) => (
-                  <span class="tag">{tool}</span>
-                ))}
-              </div>
-            </div>
+            <p>
+              <span>{group.layer}</span>
+              {group.tools.join(" · ")}
+            </p>
           ))
         }
       </div>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Education &amp; certifications</h2>
+      <div class="cv-grid">
+        <div>
+          <p class="cv-col-title">Education</p>
+          {
+            education.items.map((item) => (
+              <div class="cv-item">
+                <p class="cv-item-title">{item.degree}</p>
+                <p class="cv-item-meta">
+                  {item.institution} · {item.period} · GPA {item.gpa}
+                </p>
+              </div>
+            ))
+          }
+        </div>
+        <div>
+          <p class="cv-col-title">Certifications</p>
+          {
+            certifications.map((item) => (
+              <div class="cv-item">
+                <p class="cv-item-title">{item.title}</p>
+                <p class="cv-item-meta">
+                  {item.issuer} · {item.date} · Credential {item.credentialId}
+                </p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Research</h2>
+      <p>
+        <strong>{research.title}</strong> — {research.context}
+      </p>
+      <p>{research.summary}</p>
     </section>
   </div>
 

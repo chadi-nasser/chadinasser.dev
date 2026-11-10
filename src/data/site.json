@@ -3,7 +3,7 @@
     "extractedFrom": "https://chadinasser.dev",
     "extractedAt": "2026-10-27",
     "siteName": "chadinasser.dev",
-    "siteDescription": "Backend and DevOps engineer in Tripoli, Lebanon. Java, Spring Boot, Docker, Kubernetes, and AWS.",
+    "siteDescription": "Backend, DevOps, and AI engineer in Tripoli, Lebanon. 6+ years with Java, Spring Boot, security, data platforms, Docker, Kubernetes, and AWS.",
     "url": "https://chadinasser.dev",
     "language": "en",
     "author": "Chadi Nasser",
@@ -13,6 +13,7 @@
       "Content was extracted from the live site, the GitHub API, and the public LinkedIn profile, then updated for the Carbon-inspired redesign.",
       "LinkedIn blocks direct scraping. The linkedin section was populated from the public indexed profile at linkedin.com/in/chadi-nasser-08b073227 on 2026-10-27.",
       "The education note records a discrepancy between the site's records and LinkedIn's public snapshot. Verify it before publishing.",
+      "Skills, 6+ years of experience, security, data platforms, and AI research details were updated from the owner's feedback on 2026-10-27.",
       "The CV at /cv is generated from this file. The blog collection is the source of truth for post bodies."
     ]
   },
@@ -23,11 +24,11 @@
     "githubUrl": "https://github.com/chadi-nasser",
     "bio": "I like to code sometimes, and sometimes I code. 😐",
     "currentGithubBio": "The true art of learning 🎨 begins when you master the skill of learning how to learn 📚✨.",
-    "headline": "Software Developer | Java & Spring Boot | Backend Systems",
+    "headline": "Backend & DevOps Engineer | Java, Security, AI",
     "title": "Mid-Level Software Developer at Sword Group",
     "currentRole": "Mid-Level Software Developer",
     "currentCompany": "Sword Group",
-    "professionalSummary": "Software Developer, focusing on web development and performance optimization. Core competencies include DevOps practices, containerization with Docker, and orchestration using Kubernetes.",
+    "professionalSummary": "Backend and DevOps engineer with 6+ years of experience building and scaling Java and Spring Boot systems. Core competencies include security, data platforms, containerization with Docker, orchestration with Kubernetes, and applied AI.",
     "location": "Tripoli, North Governorate, Lebanon",
     "country": "Lebanon",
     "timezone": "GMT+2 / GMT+3",
@@ -57,7 +58,7 @@
     "greeting": "👋",
     "intro": "Hey there, this is me",
     "title": "Chadi Nasser",
-    "tagline": "Software Developer | Java & Spring Boot | Backend Systems",
+    "tagline": "Backend & DevOps Engineer | Java, Security, AI",
     "currentRole": "Mid-Level Software Developer at Sword Group",
     "location": "Tripoli, Lebanon",
     "avatarFlip": true
@@ -65,7 +66,23 @@
   "about": {
     "title": "About Me",
     "description": "A little bit about myself",
-    "paragraph": "Detail-oriented Software Developer with 3+ years of experience building and scaling backend systems using Java and the Spring Framework. Currently a Mid-Level Software Developer at Sword Group in Tripoli, Lebanon. Proficient in full-stack development, containerization with Docker, and orchestration with Kubernetes, with a strong foundation in modern frontend technologies and low-level systems programming. Possesses a proven track record of developing complex web applications and RESTful APIs."
+    "paragraph": "Backend and DevOps engineer with 6+ years of experience building and scaling backend systems using Java and the Spring Framework. Currently a Mid-Level Software Developer at Sword Group in Tripoli, Lebanon. Experienced with PostgreSQL, Liquibase, Snowflake, and MongoDB; security protocols including JWT, OAuth2, OIDC, TOTP, and passkeys; and containerization with Docker and Kubernetes. Strong foundation in modern frontend technologies and low-level systems programming, with research experience fine-tuning embedding models."
+  },
+  "research": {
+    "title": "Fine-tuning embedding models",
+    "context": "M.S. in Computer Science · Lebanese International University",
+    "summary": "My master's research focused on fine-tuning embedding models. I also build applied AI systems, including PocketPal AI, a mobile app that brings language models directly to your phone.",
+    "topics": [
+      "Embedding models",
+      "Fine-tuning",
+      "Applied AI",
+      "Python"
+    ],
+    "project": {
+      "name": "PocketPal AI",
+      "url": "https://github.com/chadi-nasser/pocketpal-ai",
+      "description": "An app that brings language models directly to your phone."
+    }
   },
   "experience": {
     "title": "Experience",
@@ -390,66 +407,39 @@
     ]
   },
   "toolkit": [
-    {
-      "tool": "Java",
-      "layer": "Language",
-      "usedFor": "Services and APIs"
-    },
-    {
-      "tool": "Spring Boot",
-      "layer": "Framework",
-      "usedFor": "REST services"
-    },
-    {
-      "tool": "MySQL + Flyway",
-      "layer": "Data",
-      "usedFor": "Schema and migrations"
-    },
-    {
-      "tool": "MongoDB",
-      "layer": "Data",
-      "usedFor": "Document store"
-    },
-    {
-      "tool": "JWT + Bucket4j",
-      "layer": "Security",
-      "usedFor": "Auth and rate limits"
-    },
-    {
-      "tool": "JUnit 5 + Mockito",
-      "layer": "Quality",
-      "usedFor": "Unit and integration tests"
-    },
-    {
-      "tool": "Docker",
-      "layer": "Infrastructure",
-      "usedFor": "Container builds"
-    },
-    {
-      "tool": "Jenkins",
-      "layer": "CI/CD",
-      "usedFor": "Build and deploy pipelines"
-    },
-    {
-      "tool": "AWS",
-      "layer": "Cloud",
-      "usedFor": "Backend deployments"
-    },
-    {
-      "tool": "SLF4J + Logback",
-      "layer": "Observability",
-      "usedFor": "Structured logs"
-    },
-    {
-      "tool": "Linux",
-      "layer": "Systems",
-      "usedFor": "Daily driver"
-    },
-    {
-      "tool": "Astro",
-      "layer": "Web",
-      "usedFor": "This page"
-    }
+    { "tool": "Java", "layer": "Languages", "usedFor": "Services and APIs" },
+    { "tool": "TypeScript", "layer": "Languages", "usedFor": "Frontend and tooling" },
+    { "tool": "Rust", "layer": "Languages", "usedFor": "Systems and low-level tools" },
+    { "tool": "Python", "layer": "Languages", "usedFor": "AI, data, and scripting" },
+    { "tool": "Spring Boot", "layer": "Backend", "usedFor": "REST services" },
+    { "tool": "Jackson", "layer": "Backend", "usedFor": "JSON serialization" },
+    { "tool": "PostgreSQL", "layer": "Data", "usedFor": "Relational data" },
+    { "tool": "MySQL", "layer": "Data", "usedFor": "Relational data" },
+    { "tool": "Flyway", "layer": "Data", "usedFor": "Schema migrations" },
+    { "tool": "Liquibase", "layer": "Data", "usedFor": "Database migrations" },
+    { "tool": "MongoDB", "layer": "Data", "usedFor": "Document store" },
+    { "tool": "Snowflake", "layer": "Data", "usedFor": "Analytics warehouse" },
+    { "tool": "JWT", "layer": "Security", "usedFor": "Stateless authentication" },
+    { "tool": "OAuth2", "layer": "Security", "usedFor": "Delegated authorization" },
+    { "tool": "OIDC", "layer": "Security", "usedFor": "Identity and SSO" },
+    { "tool": "TOTP", "layer": "Security", "usedFor": "Two-factor authentication" },
+    { "tool": "Passkeys", "layer": "Security", "usedFor": "Passwordless authentication" },
+    { "tool": "Bucket4j", "layer": "Security", "usedFor": "Rate limiting" },
+    { "tool": "Astro", "layer": "Web", "usedFor": "This site" },
+    { "tool": "Next.js", "layer": "Web", "usedFor": "Full-stack web apps" },
+    { "tool": "React", "layer": "Web", "usedFor": "Interactive interfaces" },
+    { "tool": "Docker", "layer": "DevOps", "usedFor": "Container builds" },
+    { "tool": "Kubernetes", "layer": "DevOps", "usedFor": "Orchestration" },
+    { "tool": "Jenkins", "layer": "DevOps", "usedFor": "CI/CD pipelines" },
+    { "tool": "AWS", "layer": "DevOps", "usedFor": "Cloud deployments" },
+    { "tool": "Terraform", "layer": "DevOps", "usedFor": "Infrastructure as code" },
+    { "tool": "JUnit 5", "layer": "Quality", "usedFor": "Unit and integration tests" },
+    { "tool": "Mockito", "layer": "Quality", "usedFor": "Test doubles" },
+    { "tool": "SLF4J", "layer": "Observability", "usedFor": "Structured logging" },
+    { "tool": "Logback", "layer": "Observability", "usedFor": "Log output" },
+    { "tool": "Linux", "layer": "Systems", "usedFor": "Daily driver" },
+    { "tool": "Embedding models", "layer": "AI", "usedFor": "Research and retrieval" },
+    { "tool": "Fine-tuning", "layer": "AI", "usedFor": "Model adaptation" }
   ],
   "contact": {
     "title": "Contact",
@@ -517,36 +507,12 @@
     }
   },
   "media": {
-    "avatarUrl": "https://avatars.githubusercontent.com/u/36199976?v=4",
-    "defaultImage": "src/assets/default.jpg",
-    "flipAvatarBack": "src/assets/flip-avatar/back.jpg",
-    "archivalPhotos": [
-      {
-        "file": "assets/pigeon-rocks-beirut-lebanon-loc-matpc-13089.jpg",
-        "title": "Pigeon Rocks, Beirut, Lebanon LOC matpc.13089",
-        "creator": "Matson Collection",
-        "date": "1925",
-        "license": "public domain",
-        "page": "https://commons.wikimedia.org/wiki/File:Pigeon_Rocks,_Beirut,_Lebanon_LOC_matpc.13089.tif",
-        "via": "Wikimedia Commons",
-        "credit": "\"Pigeon Rocks, Beirut, Lebanon LOC matpc.13089\" by Matson Collection, public domain, via Wikimedia Commons"
-      },
-      {
-        "file": "assets/lebanon-bshirre-and-road-to-cedars-lccn2006691711.jpg",
-        "title": "Lebanon. Bshirre and road to Cedars LCCN2006691711",
-        "creator": "American Colony (Jerusalem). Photo Department, photographer",
-        "date": "between 1900 and 1930",
-        "license": "public domain",
-        "page": "https://commons.wikimedia.org/wiki/File:Lebanon._Bshirre_and_road_to_Cedars_LCCN2006691711.jpg",
-        "via": "Wikimedia Commons",
-        "credit": "\"Lebanon. Bshirre and road to Cedars LCCN2006691711\" by American Colony (Jerusalem). Photo Department, photographer, public domain, via Wikimedia Commons"
-      }
-    ]
+    "avatarUrl": "https://avatars.githubusercontent.com/u/36199976?v=4"
   },
   "sourceMap": [
     {
       "file": "src/data/site.json",
-      "contains": "Canonical profile, experience, education, certifications, toolkit, projects, contact and media credits"
+      "contains": "Canonical profile, experience, research, education, certifications, toolkit, projects and contact"
     },
     {
       "file": "src/pages/index.astro",
@@ -573,12 +539,8 @@
       "contains": "Profile avatar from GitHub"
     },
     {
-      "file": "assets/pigeon-rocks-beirut-lebanon-loc-matpc-13089.jpg",
-      "contains": "Archival photo used on the homepage"
-    },
-    {
-      "file": "assets/credits.json",
-      "contains": "Archival photo credits"
+      "file": "src/components/Research.astro",
+      "contains": "Research and applied AI section"
     },
     {
       "file": "https://api.github.com/users/chadi-nasser",

@@ -3,6 +3,7 @@ import SectionHeader from "@/components/SectionHeader.astro";
 import site from "@/data/site.json";
 
 const education = site.education.items[0];
+const reading = site.miscellaneous.currentlyReading;
 ---
 
 <section class="section" id="about">
@@ -25,7 +26,7 @@ const education = site.education.items[0];
         </div>
         <div>
           <dt>Focus</dt>
-          <dd>Java, Spring Boot, DevOps</dd>
+          <dd>Backend, Data, Cloud</dd>
         </div>
         <div>
           <dt>Education</dt>
@@ -40,11 +41,11 @@ const education = site.education.items[0];
       <div class="about-copy">
         <p>{site.about.paragraph}</p>
         <p>
-          Off the clock I read, break my phone with custom kernels, and write
-          about the tools I use.
+          Off the clock I read, break my phone with custom kernels, and tinker
+          with backend and infrastructure tooling.
         </p>
         <p class="about-now">
-          Currently reading <cite>Charismatic Charlie Wade</cite> by Lord Leaf.
+          Currently reading <cite>{reading.title}</cite> by {reading.author}.
         </p>
       </div>
     </div>

@@ -81,25 +81,29 @@ const jsonLd = {
     <section class="cv-section">
       <h2 class="cv-section-title">Experience</h2>
       {
-        experience.items.map((item) => (
-          <div class="cv-role-block">
-            <div class="cv-role">
-              <h3>
-                {item.role} · {item.company}
-              </h3>
-              <span>{item.period}</span>
+        experience.items.map((item) => {
+          const highlights =
+            ("cvHighlights" in item ? item.cvHighlights : item.highlights) ?? [];
+          return (
+            <div class="cv-role-block">
+              <div class="cv-role">
+                <h3>
+                  {item.role} · {item.company}
+                </h3>
+                <span>{item.period}</span>
+              </div>
+              {item.location && <p class="cv-location">{item.location}</p>}
+              {item.summary && <p class="cv-summary">{item.summary}</p>}
+              {highlights.length > 0 && (
+                <ul class="cv-list">
+                  {highlights.map((highlight) => (
+                    <li>{highlight}</li>
+                  ))}
+                </ul>
+              )}
             </div>
-            {item.location && <p class="cv-location">{item.location}</p>}
-            {item.summary && <p class="cv-summary">{item.summary}</p>}
-            {item.highlights.length > 0 && (
-              <ul class="cv-list">
-                {item.highlights.map((highlight) => (
-                  <li>{highlight}</li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))
+          );
+        })
       }
     </section>
 

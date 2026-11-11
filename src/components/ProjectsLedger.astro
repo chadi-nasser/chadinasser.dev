@@ -21,7 +21,6 @@ interface Props {
   limit?: number;
   showDescriptions?: boolean;
   showNote?: boolean;
-  total?: number;
 }
 
 const {
@@ -32,14 +31,12 @@ const {
   limit,
   showDescriptions = false,
   showNote = true,
-  total,
 } = Astro.props;
 
 const sorted = [...projects].sort(
   (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
 );
 const items = limit ? sorted.slice(0, limit) : sorted;
-const repositoryCount = total ?? items.length;
 ---
 
 <section class="section" id="projects">
@@ -106,7 +103,7 @@ const repositoryCount = total ?? items.length;
     {
       showNote && (
         <p class="ledger-note">
-          {repositoryCount} public repositories.{" "}
+          Selected repositories.{" "}
           <a href="/projects">See all projects</a> or browse{" "}
           <a
             href="https://github.com/chadi-nasser"

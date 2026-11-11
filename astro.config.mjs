@@ -9,7 +9,9 @@ export default defineConfig({
   integrations: [sitemap()],
   redirects: {
     "/project": "/projects",
-    "/blog/chadinasserdev": "/blog/from-react-to-astro",
-    "/blog/chadinasser.dev": "/blog/from-react-to-astro",
+    "/blog": "/",
+    "/blog/chadinasserdev": "/",
+    "/blog/chadinasser.dev": "/",
+    "/blog/from-react-to-astro": "/",
   },
 });

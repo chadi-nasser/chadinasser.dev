@@ -1,5 +1,4 @@
 ---
-import Icon from "@/components/Icon.astro";
 import SectionHeader from "@/components/SectionHeader.astro";
 import site from "@/data/site.json";
 
@@ -11,31 +10,26 @@ const { research } = site;
     <SectionHeader
       kicker="05 / Research & AI"
       title="Embedding models and applied AI"
-      intro="Master's research in fine-tuning embedding models, alongside applied AI product work."
+      intro="Master's research in fine-tuning embedding models, alongside applied AI work."
     />
 
     <div class="research-grid">
       <div class="research-copy">
         <p>{research.summary}</p>
-        <div class="toolkit-items">
-          {research.topics.map((topic) => <span class="tag">{topic}</span>)}
-        </div>
       </div>
 
-      <a
-        class="research-card"
-        href={research.project.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="research-card-kicker">Selected AI project</span>
-        <span class="research-card-title">{research.project.name}</span>
-        <span class="research-card-desc">{research.project.description}</span>
-        <span class="research-card-link">
-          View on GitHub
-          <Icon name="arrow-up-right" />
-        </span>
-      </a>
+      <div class="research-meta">
+        <div>
+          <span class="fact-label">Context</span>
+          <p>{research.context}</p>
+        </div>
+        <div>
+          <span class="fact-label">Topics</span>
+          <div class="toolkit-items">
+            {research.topics.map((topic) => <span class="tag">{topic}</span>)}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

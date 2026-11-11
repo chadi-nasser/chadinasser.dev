@@ -1,5 +1,4 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import About from "@/components/About.astro";
 import Contact from "@/components/Contact.astro";
@@ -9,23 +8,14 @@ import Hero from "@/components/Hero.astro";
 import ProjectsLedger from "@/components/ProjectsLedger.astro";
 import Research from "@/components/Research.astro";
 import ProofStrip from "@/components/ProofStrip.astro";
-import SectionHeader from "@/components/SectionHeader.astro";
 import Toolkit from "@/components/Toolkit.astro";
-import WritingList from "@/components/WritingList.astro";
 import site from "@/data/site.json";
-
-const posts = (await getCollection("blog")).sort((a, b) => {
-  const aDate = a.data.date?.getTime() ?? 0;
-  const bDate = b.data.date?.getTime() ?? 0;
-  return bDate - aDate;
-});
 
 const featuredNames = [
   "spring-ecommerce-api",
   "chadinasser.dev",
   "chip-8-emulator",
   "SimpleTerraformInfra",
-  "pocketpal-ai",
   "xvru-os",
 ];
 
@@ -107,26 +97,12 @@ const jsonLd = [
   <ProofStrip />
   <About />
   <Experience items={site.experience.items} />
-  <ProjectsLedger
-    projects={featured}
-    limit={6}
-    total={site.github.profile.publicRepos}
-  />
+  <ProjectsLedger projects={featured} limit={5} />
   <Credentials
     education={site.education}
     certifications={site.certifications}
   />
   <Research />
-  <section class="section" id="writing">
-    <div class="container">
-      <SectionHeader
-        kicker="06 / Writing"
-        title="Notes from the work"
-        intro="Occasional writing about the tools, trade-offs, and detours behind the projects."
-      />
-      <WritingList posts={posts} />
-    </div>
-  </section>
   <Toolkit items={site.toolkit} />
   <Contact />
 </BaseLayout>

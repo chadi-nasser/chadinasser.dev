@@ -3,7 +3,7 @@
     "extractedFrom": "https://chadinasser.dev",
     "extractedAt": "2026-10-27",
     "siteName": "chadinasser.dev",
-    "siteDescription": "Backend, DevOps, and AI engineer in Tripoli, Lebanon. 6+ years with Java, Spring Boot, security, data platforms, Docker, Kubernetes, and AWS.",
+    "siteDescription": "Backend, DevOps, and AI engineer in Tripoli, Lebanon. 5+ years with Java, Spring Boot, security, data platforms, Docker, Kubernetes, and AWS.",
     "url": "https://chadinasser.dev",
     "language": "en",
     "author": "Chadi Nasser",
@@ -12,15 +12,15 @@
     "notes": [
       "Content was extracted from the live site, the GitHub API, and the public LinkedIn profile, then updated for the Carbon-inspired redesign.",
       "LinkedIn blocks direct scraping. The linkedin section was populated from the public indexed profile at linkedin.com/in/chadi-nasser-08b073227 on 2026-10-27.",
-      "The education note records a discrepancy between the site's records and LinkedIn's public snapshot. Verify it before publishing.",
-      "Skills, 6+ years of experience, security, data platforms, and AI research details were updated from the owner's feedback on 2026-10-27.",
+      "B.S. dates (2020–2023) and GPA (3.25) were confirmed by the owner on 2026-11-11. Keep Upwork and LinkedIn aligned with these values.",
+      "Skills, 5+ years of experience, security, data platforms, and AI research details were updated from the owner's feedback on 2026-11-11.",
       "The CV at /cv is generated from this file."
     ]
   },
   "person": {
     "name": "Chadi Nasser",
     "handle": "chadi-nasser",
-    "avatarUrl": "https://avatars.githubusercontent.com/u/36199976?v=4",
+    "avatarUrl": "https://chadinasser.dev/avatar.jpg",
     "githubUrl": "https://github.com/chadi-nasser",
     "bio": "I like to code sometimes, and sometimes I code. 😐",
     "currentGithubBio": "The true art of learning 🎨 begins when you master the skill of learning how to learn 📚✨.",
@@ -28,7 +28,7 @@
     "title": "Mid-Level Software Developer at Sword Group",
     "currentRole": "Mid-Level Software Developer",
     "currentCompany": "Sword Group",
-    "professionalSummary": "Backend and DevOps engineer with 6+ years of experience building and scaling Java and Spring Boot systems. Core competencies include security, data platforms, containerization with Docker, orchestration with Kubernetes, and applied AI.",
+    "professionalSummary": "Backend and DevOps engineer with 5+ years of experience building and scaling Java and Spring Boot systems. Core competencies include security, data platforms, containerization with Docker, orchestration with Kubernetes, and applied AI.",
     "location": "Tripoli, North Governorate, Lebanon",
     "country": "Lebanon",
     "timezone": "GMT+2 / GMT+3",
@@ -61,12 +61,12 @@
     "tagline": "Backend & DevOps Engineer | Java, Security, AI",
     "currentRole": "Mid-Level Software Developer at Sword Group",
     "location": "Tripoli, Lebanon",
-    "avatarFlip": true
+    "avatarFlip": false
   },
   "about": {
     "title": "About Me",
     "description": "A little bit about myself",
-    "paragraph": "Backend and DevOps engineer with 6+ years of experience building and scaling backend systems using Java and the Spring Framework. Currently a Mid-Level Software Developer at Sword Group in Beirut, Lebanon, working on API performance, data access, and technical design within a Spring Boot, Snowflake, and PostgreSQL environment. Experienced with Liquibase, MongoDB, security protocols including JWT, OAuth2, OIDC, TOTP, and passkeys, and containerization with Docker and Kubernetes. Strong foundation in low-level systems programming, with research experience fine-tuning embedding models."
+    "paragraph": "Backend and DevOps engineer with 5+ years of experience building and scaling backend systems using Java and the Spring Framework. Currently a Mid-Level Software Developer at Sword Group in Beirut, Lebanon, working on API performance, data access, and technical design within a Spring Boot, Snowflake, and PostgreSQL environment. Experienced with Liquibase, MongoDB, security protocols including JWT, OAuth2, OIDC, TOTP, and passkeys, and containerization with Docker and Kubernetes. Strong foundation in low-level systems programming, with research experience fine-tuning embedding models."
   },
   "research": {
     "title": "Fine-tuning embedding models",
@@ -91,13 +91,13 @@
         "current": true,
         "summary": "Backend engineer on a Spring Boot platform, working across API performance, data access, and technical design in a Snowflake and PostgreSQL environment.",
         "highlights": [
-          "Improved multiple slow API endpoints through profiling and reducing database round trips, including one that became roughly 4.5× faster.",
+          "Improved multiple slow API endpoints through profiling and reducing database round trips, including one that went from about 90 seconds to about 20 seconds (roughly 4.5× faster).",
           "Adapted data access to an existing Snowflake and PostgreSQL stack, balancing OLAP constraints with transactional workloads and moving heavy work database-side where it reduced round trips.",
           "Built data-processing and integration flows for 5–6 GB JSON payloads, generated Excel exports, and helped set up S3 export storage across environments.",
           "Proposed technical solutions and improvements during use-case reviews with product and engineering stakeholders, highlighting risks and trade-offs before implementation."
         ],
         "cvHighlights": [
-          "Improved multiple slow API endpoints through profiling and reducing database round trips, including a roughly 4.5× speedup.",
+          "Improved multiple slow API endpoints through profiling and reducing database round trips, including one that went from about 90 seconds to about 20 seconds (roughly 4.5× faster).",
           "Adapted data access to an existing Snowflake and PostgreSQL stack under OLAP constraints.",
           "Proposed technical solutions and improvements in use-case reviews with product and engineering stakeholders."
         ]
@@ -105,10 +105,10 @@
       {
         "role": "Software Engineer",
         "company": "Lebanon AutoTrade",
-        "period": "Jul 2021 – 2025",
-        "location": "Mejdlaiya, North Governorate, Lebanon",
+        "period": "Jul 2021 – Oct 2025",
+        "location": "North Governorate, Lebanon",
         "current": false,
-        "summary": "Building and evolving the core backend powering the lbauto.trade platform.",
+        "summary": "Built and evolved the core backend powering the lbauto.trade platform.",
         "highlights": [
           "Architected and implemented core Java/Spring Boot microservices exposing secure REST APIs.",
           "Implemented stateless authentication (JWT) plus request rate limiting (Bucket4j).",
@@ -137,7 +137,7 @@
         "gpa": "3.25 / 4.0"
       }
     ],
-    "linkedinNote": "The public indexed LinkedIn profile shows one Bachelor's degree ending 2025 with a grade of 3.3. The site lists an M.S. (2023–2025, GPA 3.96) and a B.S. (2020–2023, GPA 3.25). Verify before publishing."
+    "linkedinNote": "B.S. dates (2020–2023) and GPA (3.25) were confirmed by the owner on 2026-11-11. Keep Upwork and LinkedIn aligned with these values."
   },
   "certifications": [
     {
@@ -152,12 +152,6 @@
       "date": "Sep 2024",
       "credentialId": "117047272",
       "verifyUrl": "https://success.simplilearn.com/de265c34-bc37-4e81-8eea-6a060bdcb69f"
-    },
-    {
-      "title": "CKA - Certified Kubernetes Administrator",
-      "issuer": "Simplilearn",
-      "date": "2024",
-      "credentialId": "7315387"
     }
   ],
   "linkedin": {
@@ -180,14 +174,13 @@
         "title": null,
         "startDate": "2021-07-01",
         "endDate": null,
-        "location": "Mejdlaiya, North Governorate, Lebanon",
+        "location": "North Governorate, Lebanon",
         "current": false
       }
     ],
     "certifications": [
       "DevOps Capstone Project (Simplilearn, 2024)",
-      "DevOps Engineer (Simplilearn, Sep 2024)",
-      "CKA - Certified Kubernetes Administrator (Simplilearn, 2024)"
+      "DevOps Engineer (Simplilearn, Sep 2024)"
     ]
   },
   "miscellaneous": {
@@ -328,7 +321,7 @@
         "description": "A Trello clone using Next.js 14 (Server Actions), Typescript, Tailwind CSS, Clerk and Stripe.",
         "language": "TypeScript",
         "repoUrl": "https://github.com/chadi-nasser/trellone",
-        "homepage": "https://trellone-nine.vercel.app",
+        "homepage": null,
         "createdAt": "2024-02-19T13:30:28Z",
         "pushedAt": "2024-02-21T23:32:57Z"
       },
@@ -338,7 +331,7 @@
         "description": null,
         "language": "TypeScript",
         "repoUrl": "https://github.com/chadi-nasser/ecommerce-cms",
-        "homepage": "https://ecommerce-cms-ehdl.vercel.app",
+        "homepage": null,
         "createdAt": "2023-11-15T12:34:01Z",
         "pushedAt": "2023-11-17T18:40:57Z"
       },
@@ -348,7 +341,7 @@
         "description": null,
         "language": "TypeScript",
         "repoUrl": "https://github.com/chadi-nasser/ecommerce-store",
-        "homepage": "https://ecommerce-store-two-rosy.vercel.app",
+        "homepage": null,
         "createdAt": "2023-11-15T12:31:26Z",
         "pushedAt": "2023-11-16T00:09:16Z"
       },
@@ -399,6 +392,7 @@
     { "tool": "Liquibase", "layer": "Data", "usedFor": "Database migrations" },
     { "tool": "MongoDB", "layer": "Data", "usedFor": "Document store" },
     { "tool": "Snowflake", "layer": "Data", "usedFor": "Analytics warehouse" },
+    { "tool": "Qdrant", "layer": "Data", "usedFor": "Vector search" },
     { "tool": "JWT", "layer": "Security", "usedFor": "Stateless authentication" },
     { "tool": "OAuth2", "layer": "Security", "usedFor": "Delegated authorization" },
     { "tool": "OIDC", "layer": "Security", "usedFor": "Identity and SSO" },
@@ -413,13 +407,17 @@
     { "tool": "Jenkins", "layer": "DevOps", "usedFor": "CI/CD pipelines" },
     { "tool": "AWS", "layer": "DevOps", "usedFor": "Cloud deployments" },
     { "tool": "Terraform", "layer": "DevOps", "usedFor": "Infrastructure as code" },
+    { "tool": "Maven", "layer": "Build", "usedFor": "Java builds" },
     { "tool": "JUnit 5", "layer": "Quality", "usedFor": "Unit and integration tests" },
     { "tool": "Mockito", "layer": "Quality", "usedFor": "Test doubles" },
     { "tool": "SLF4J", "layer": "Observability", "usedFor": "Structured logging" },
     { "tool": "Logback", "layer": "Observability", "usedFor": "Log output" },
     { "tool": "Linux", "layer": "Systems", "usedFor": "Daily driver" },
     { "tool": "Embedding models", "layer": "AI", "usedFor": "Research and retrieval" },
-    { "tool": "Fine-tuning", "layer": "AI", "usedFor": "Model adaptation" }
+    { "tool": "Fine-tuning", "layer": "AI", "usedFor": "Model adaptation" },
+    { "tool": "RAG", "layer": "AI", "usedFor": "Retrieval pipelines" },
+    { "tool": "AI agents", "layer": "AI", "usedFor": "Agent workflows" },
+    { "tool": "Vector search", "layer": "AI", "usedFor": "Semantic retrieval" }
   ],
   "contact": {
     "title": "Contact",
@@ -461,7 +459,7 @@
     }
   },
   "media": {
-    "avatarUrl": "https://avatars.githubusercontent.com/u/36199976?v=4"
+    "avatarUrl": "https://chadinasser.dev/avatar.jpg"
   },
   "sourceMap": [
     {
@@ -485,8 +483,8 @@
       "contains": "Carbon-inspired tokens, typography and layout"
     },
     {
-      "file": "src/assets/avatar.png",
-      "contains": "Profile avatar from GitHub"
+      "file": "src/assets/avatar.jpg",
+      "contains": "Profile headshot"
     },
     {
       "file": "src/components/Research.astro",

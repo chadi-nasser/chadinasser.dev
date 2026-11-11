@@ -28,6 +28,22 @@ bun run preview
 
 - Profile, experience, education, certifications, projects, and contact data live in `src/data/site.json`.
 - The CV at `/cv` is generated from the same data and is print-friendly.
+- `public/chadi-nasser-cv.pdf` is the downloadable copy. It is a static snapshot, so the normal build does not regenerate it.
+
+### Regenerating the CV PDF
+
+After editing the CV data:
+
+1. Build the site: `bun run build` (or `npm run build`).
+2. Serve the build in a second terminal: `bun run preview -- --port 4321`.
+3. Print the CV page with headless Chrome. On Windows:
+   ```powershell
+   & "$env:ProgramFiles\Google\Chrome\Application\chrome.exe" `
+     --headless=new --disable-gpu --no-pdf-header-footer `
+     --print-to-pdf="$PWD\public\chadi-nasser-cv.pdf" `
+     "http://localhost:4321/cv/"
+   ```
+4. Build again so Astro copies the new PDF into `dist/`: `bun run build`.
 
 ## Deployment
 

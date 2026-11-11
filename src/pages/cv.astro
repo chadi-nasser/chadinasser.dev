@@ -6,11 +6,6 @@ import site from "@/data/site.json";
 const { person, education, experience, certifications, research, toolkit } =
   site;
 
-const updated = new Intl.DateTimeFormat("en", {
-  month: "long",
-  year: "numeric",
-}).format(new Date());
-
 const layers = [...new Set(toolkit.map((item) => item.layer))];
 const groups = layers.map((layer) => ({
   layer,
@@ -61,15 +56,14 @@ const jsonLd = {
         </a>
         <a href="https://chadinasser.dev">chadinasser.dev</a>
         <span>{person.location}</span>
-        <span>Updated {updated}</span>
       </div>
     </header>
 
     <div class="cv-actions">
-      <button class="btn btn-primary" id="print-cv" type="button">
-        <Icon name="printer" />
-        Print / Save as PDF
-      </button>
+      <a class="btn btn-primary" href="/chadi-nasser-cv.pdf" download>
+        <Icon name="download" />
+        Download PDF
+      </a>
       <a class="btn btn-secondary" href="/">← Back to site</a>
     </div>
 
@@ -162,9 +156,4 @@ const jsonLd = {
     </section>
   </div>
 
-  <script is:inline>
-    document.getElementById("print-cv")?.addEventListener("click", () => {
-      window.print();
-    });
-  </script>
 </BaseLayout>

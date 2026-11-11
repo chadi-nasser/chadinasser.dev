@@ -59,7 +59,6 @@ const items = limit ? sorted.slice(0, limit) : sorted;
                 href={project.homepage ?? project.repoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Visit ${project.name}`}
               >
                 <span class="ledger-name">{project.name}</span>
                 {showDescriptions && project.description && (

@@ -420,34 +420,34 @@ pre {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.5fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr);
   gap: clamp(2rem, 5vw, 5rem);
   align-items: start;
 }
 
-.about-facts {
+.about-principles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   border-top: 1px solid var(--border);
 }
 
-.about-facts > div {
-  display: grid;
-  grid-template-columns: 6rem minmax(0, 1fr);
-  gap: 1rem;
-  padding-block: 0.75rem;
+.about-principles li {
+  display: flex;
+  gap: 0.75rem;
+  padding-block: 0.9rem;
   border-bottom: 1px solid var(--border);
+  color: var(--ink-soft);
+  font-size: var(--text-base);
+  line-height: 1.4;
 }
 
-.about-facts dt {
+.about-principle-num {
+  padding-top: 0.15rem;
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.about-facts dd {
-  font-size: var(--text-sm);
-  line-height: 1.45;
+  letter-spacing: 0.04em;
 }
 
 .about-copy {
@@ -460,13 +460,6 @@ pre {
 .about-copy p + p {
   margin-top: 1rem;
   color: var(--muted);
-}
-
-.about-copy .about-now {
-  margin-top: 0.75rem;
-  color: var(--muted);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
 }
 
 .about-copy cite {
@@ -809,19 +802,17 @@ pre {
   margin-bottom: 0.5rem;
 }
 
-.toolkit-list {
-  border-top: 1px solid var(--border);
-}
-
-.toolkit-row {
-  display: grid;
-  grid-template-columns: 10rem minmax(0, 1fr);
-  gap: 1.5rem;
-  padding-block: 1rem;
+.toolkit-core {
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
 }
 
-.toolkit-layer {
+.toolkit-also {
+  padding-top: 1.5rem;
+}
+
+.toolkit-label {
+  margin-bottom: 0.75rem;
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
@@ -845,6 +836,19 @@ pre {
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   line-height: 1.4;
+}
+
+.tag--core {
+  padding: 0.45rem 0.7rem;
+  border-color: var(--border-strong);
+  color: var(--ink);
+  font-size: var(--text-sm);
+}
+
+.tag--also {
+  padding: 0.2rem 0.45rem;
+  color: var(--muted);
+  font-size: var(--text-xs);
 }
 
 .photo-band {
@@ -1390,6 +1394,7 @@ pre {
 
   .about-copy {
     order: -1;
+    font-size: var(--text-base);
   }
 
   .research-grid {
@@ -1514,11 +1519,6 @@ pre {
 
   .credential-id {
     white-space: normal;
-  }
-
-  .toolkit-row {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
   }
 
   .photo-figure img {

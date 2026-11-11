@@ -5,6 +5,7 @@ interface ToolkitItem {
   tool: string;
   layer: string;
   usedFor: string;
+  core?: boolean;
 }
 
 interface Props {
@@ -12,12 +13,8 @@ interface Props {
 }
 
 const { items } = Astro.props;
-
-const layers = [...new Set(items.map((item) => item.layer))];
-const groups = layers.map((layer) => ({
-  layer,
-  items: items.filter((item) => item.layer === layer),
-}));
+const core = items.filter((item) => item.core);
+const also = items.filter((item) => !item.core);
 ---
 
 <section class="section section--surface" id="toolkit">
@@ -28,21 +25,26 @@ const groups = layers.map((layer) => ({
       intro="A working stack rather than a logo wall. The common thread is systems that are understandable, observable, and boring to operate."
     />
 
-    <div class="toolkit-list">
-      {
-        groups.map((group) => (
-          <div class="toolkit-row">
-            <span class="toolkit-layer">{group.layer}</span>
-            <div class="toolkit-items">
-              {group.items.map((item) => (
-                <span class="tag" title={item.usedFor}>
-                  {item.tool}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))
-      }
+    <div class="toolkit-core">
+      <p class="toolkit-label">Core stack</p>
+      <div class="toolkit-items">
+        {core.map((item) => (
+          <span class="tag tag--core" title={item.usedFor}>
+            {item.tool}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <div class="toolkit-also">
+      <p class="toolkit-label">Also used</p>
+      <div class="toolkit-items">
+        {also.map((item) => (
+          <span class="tag tag--also" title={item.usedFor}>
+            {item.tool}
+          </span>
+        ))}
+      </div>
     </div>
   </div>
 </section>

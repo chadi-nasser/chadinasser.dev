@@ -2,8 +2,6 @@
 import SectionHeader from "@/components/SectionHeader.astro";
 import site from "@/data/site.json";
 
-const education = site.education.items[0];
-const reading = site.miscellaneous.currentlyReading;
 ---
 
 <section class="section" id="about">
@@ -11,43 +9,18 @@ const reading = site.miscellaneous.currentlyReading;
     <SectionHeader
       kicker="01 / About"
       title="Backend systems, built to stay up."
-      intro="The short version: I care about services that are fast, observable, and boring to operate."
     />
 
     <div class="about-grid">
-      <dl class="about-facts">
-        <div>
-          <dt>Based</dt>
-          <dd>{site.person.location}</dd>
-        </div>
-        <div>
-          <dt>Current</dt>
-          <dd>{site.person.currentRole} at {site.person.currentCompany}</dd>
-        </div>
-        <div>
-          <dt>Focus</dt>
-          <dd>Backend, Data, Cloud</dd>
-        </div>
-        <div>
-          <dt>Education</dt>
-          <dd>{education.degree}, GPA {education.gpa}</dd>
-        </div>
-        <div>
-          <dt>Research</dt>
-          <dd>Fine-tuning embedding models</dd>
-        </div>
-      </dl>
-
       <div class="about-copy">
-        <p>{site.about.paragraph}</p>
-        <p>
-          Off the clock I read, break my phone with custom kernels, and tinker
-          with backend and infrastructure tooling.
-        </p>
-        <p class="about-now">
-          Currently reading <cite>{reading.title}</cite> by {reading.author}.
-        </p>
+        <p class="about-lead">{site.about.lead}</p>
       </div>
+
+      <ul class="about-principles" aria-label="How I work">
+        <li><span class="about-principle-num">01</span> Observable by default</li>
+        <li><span class="about-principle-num">02</span> Boring on purpose</li>
+        <li><span class="about-principle-num">03</span> Design before code</li>
+      </ul>
     </div>
   </div>
 </section>

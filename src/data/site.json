@@ -66,16 +66,18 @@
   "about": {
     "title": "About Me",
     "description": "A little bit about myself",
+    "lead": "I build backend systems that stay fast, observable, and boring to operate. I work mainly in Java and Spring Boot, with a focus on data, security, and shipping reliably. I’m growing toward solution architecture: API contracts, data flow, and trade-offs.",
     "paragraph": "Backend and DevOps engineer with 5+ years of experience building and scaling backend systems using Java and the Spring Framework. Currently a Mid-Level Software Developer at Sword Group in Beirut, Lebanon, working on API performance, data access, and technical design within a Spring Boot, Snowflake, and PostgreSQL environment. Experienced with Liquibase, MongoDB, security protocols including JWT, OAuth2, OIDC, TOTP, and passkeys, and containerization with Docker and Kubernetes. Strong foundation in low-level systems programming, with research experience fine-tuning embedding models."
   },
   "research": {
-    "title": "Fine-tuning embedding models",
+    "title": "Optimizing sentence transformers for retrieval",
     "context": "M.S. in Computer Science · Lebanese International University",
-    "summary": "My master's research focused on fine-tuning embedding models.",
+    "summary": "The work compared full fine-tuning, LoRA, and a lightweight top-layer adapter for sentence-transformer retrieval in a Qdrant-backed pipeline. It focused on the practical trade-off between retrieval quality and the cost of adapting a model to a domain.",
     "topics": [
-      "Embedding models",
-      "Fine-tuning",
-      "Applied AI",
+      "Sentence Transformers",
+      "LoRA / PEFT",
+      "Qdrant",
+      "IR evaluation",
       "Python"
     ]
   },
@@ -141,12 +143,6 @@
   },
   "certifications": [
     {
-      "title": "DevOps Capstone Project",
-      "issuer": "Simplilearn",
-      "date": "2024",
-      "credentialId": "7363068"
-    },
-    {
       "title": "DevOps Engineer",
       "issuer": "Simplilearn",
       "date": "Sep 2024",
@@ -179,7 +175,6 @@
       }
     ],
     "certifications": [
-      "DevOps Capstone Project (Simplilearn, 2024)",
       "DevOps Engineer (Simplilearn, Sep 2024)"
     ]
   },
@@ -378,34 +373,34 @@
     ]
   },
   "toolkit": [
-    { "tool": "Java", "layer": "Languages", "usedFor": "Services and APIs" },
+    { "tool": "Java", "layer": "Languages", "usedFor": "Services and APIs", "core": true },
     { "tool": "TypeScript", "layer": "Languages", "usedFor": "Frontend and tooling" },
     { "tool": "Rust", "layer": "Languages", "usedFor": "Systems and low-level tools" },
     { "tool": "Python", "layer": "Languages", "usedFor": "AI, data, and scripting" },
-    { "tool": "Spring Boot", "layer": "Backend", "usedFor": "REST services" },
+    { "tool": "Spring Boot", "layer": "Backend", "usedFor": "REST services", "core": true },
     { "tool": "Jackson", "layer": "Backend", "usedFor": "JSON serialization" },
     { "tool": "Apache POI", "layer": "Backend", "usedFor": "Excel exports" },
     { "tool": "RestTemplate", "layer": "Backend", "usedFor": "Internal API integration" },
-    { "tool": "PostgreSQL", "layer": "Data", "usedFor": "Relational data" },
+    { "tool": "PostgreSQL", "layer": "Data", "usedFor": "Relational data", "core": true },
     { "tool": "MySQL", "layer": "Data", "usedFor": "Relational data" },
     { "tool": "Flyway", "layer": "Data", "usedFor": "Schema migrations" },
     { "tool": "Liquibase", "layer": "Data", "usedFor": "Database migrations" },
     { "tool": "MongoDB", "layer": "Data", "usedFor": "Document store" },
-    { "tool": "Snowflake", "layer": "Data", "usedFor": "Analytics warehouse" },
-    { "tool": "Qdrant", "layer": "Data", "usedFor": "Vector search" },
-    { "tool": "JWT", "layer": "Security", "usedFor": "Stateless authentication" },
-    { "tool": "OAuth2", "layer": "Security", "usedFor": "Delegated authorization" },
-    { "tool": "OIDC", "layer": "Security", "usedFor": "Identity and SSO" },
+    { "tool": "Snowflake", "layer": "Data", "usedFor": "Analytics warehouse", "core": true },
+    { "tool": "Qdrant", "layer": "Data", "usedFor": "Vector search", "core": true },
+    { "tool": "JWT", "layer": "Security", "usedFor": "Stateless authentication", "core": true },
+    { "tool": "OAuth2", "layer": "Security", "usedFor": "Delegated authorization", "core": true },
+    { "tool": "OIDC", "layer": "Security", "usedFor": "Identity and SSO", "core": true },
     { "tool": "TOTP", "layer": "Security", "usedFor": "Two-factor authentication" },
     { "tool": "Passkeys", "layer": "Security", "usedFor": "Passwordless authentication" },
     { "tool": "Bucket4j", "layer": "Security", "usedFor": "Rate limiting" },
     { "tool": "Astro", "layer": "Web", "usedFor": "This site" },
     { "tool": "Next.js", "layer": "Web", "usedFor": "Full-stack web apps" },
     { "tool": "React", "layer": "Web", "usedFor": "Interactive interfaces" },
-    { "tool": "Docker", "layer": "DevOps", "usedFor": "Container builds" },
-    { "tool": "Kubernetes", "layer": "DevOps", "usedFor": "Orchestration" },
-    { "tool": "Jenkins", "layer": "DevOps", "usedFor": "CI/CD pipelines" },
-    { "tool": "AWS", "layer": "DevOps", "usedFor": "Cloud deployments" },
+    { "tool": "Docker", "layer": "DevOps", "usedFor": "Container builds", "core": true },
+    { "tool": "Kubernetes", "layer": "DevOps", "usedFor": "Orchestration", "core": true },
+    { "tool": "Jenkins", "layer": "DevOps", "usedFor": "CI/CD pipelines", "core": true },
+    { "tool": "AWS", "layer": "DevOps", "usedFor": "Cloud deployments", "core": true },
     { "tool": "Terraform", "layer": "DevOps", "usedFor": "Infrastructure as code" },
     { "tool": "Maven", "layer": "Build", "usedFor": "Java builds" },
     { "tool": "JUnit 5", "layer": "Quality", "usedFor": "Unit and integration tests" },
@@ -415,8 +410,8 @@
     { "tool": "Linux", "layer": "Systems", "usedFor": "Daily driver" },
     { "tool": "Embedding models", "layer": "AI", "usedFor": "Research and retrieval" },
     { "tool": "Fine-tuning", "layer": "AI", "usedFor": "Model adaptation" },
-    { "tool": "RAG", "layer": "AI", "usedFor": "Retrieval pipelines" },
-    { "tool": "AI agents", "layer": "AI", "usedFor": "Agent workflows" },
+    { "tool": "RAG", "layer": "AI", "usedFor": "Retrieval pipelines", "core": true },
+    { "tool": "AI agents", "layer": "AI", "usedFor": "Agent workflows", "core": true },
     { "tool": "Vector search", "layer": "AI", "usedFor": "Semantic retrieval" }
   ],
   "contact": {

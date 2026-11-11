@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title">
+  <title id="title">Chadi Nasser — CN monogram</title>
+  <rect width="512" height="512" fill="#0f62fe"/>
+  <g fill="#ffffff">
+        <path d="M353 -12Q261 -12 193.5 28.0Q126 68 89.0 147.5Q52 227 52 344Q52 462 89.0 543.5Q126 625 193.5 667.5Q261 710 353 710Q446 710 508.5 670.0Q571 630 608 549L495 489Q480 536 446.0 564.5Q412 593 353 593Q279 593 235.5 543.0Q192 493 192 403V293Q192 204 235.5 154.5Q279 105 353 105Q412 105 449.0 137.0Q486 169 504 216L611 153Q574 75 510.0 31.5Q446 -12 353 -12Z" transform="translate(73.155 355.630) scale(0.285472 -0.285472)"/>
+    <path d="M492 0 282 358 210 503H207V354V0H82V698H227L437 340L509 195H512V344V698H637V0Z" transform="translate(242.155 355.630) scale(0.285472 -0.285472)"/>
+  </g>
+</svg>

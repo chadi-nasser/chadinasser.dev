@@ -114,7 +114,7 @@
         "highlights": [
           "Architected and implemented core Java/Spring Boot microservices exposing secure REST APIs.",
           "Implemented stateless authentication (JWT) plus request rate limiting (Bucket4j).",
-          "Led migration MongoDB â†’ MySQL; standardized schema versioning via Flyway.",
+          "Led migration MongoDB → MySQL; standardized schema versioning via Flyway.",
           "Authored unit & integration tests (JUnit 5, Mockito) to safeguard critical business flows.",
           "Set up CI/CD pipeline (Jenkins + Docker) and deployed backend services on AWS.",
           "Introduced structured logging (SLF4J / Logback) improving production observability."

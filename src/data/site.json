@@ -1,4 +1,4 @@
-{
+﻿{
   "meta": {
     "extractedFrom": "https://chadinasser.dev",
     "extractedAt": "2026-10-27",
@@ -7,12 +7,12 @@
     "url": "https://chadinasser.dev",
     "language": "en",
     "author": "Chadi Nasser",
-    "copyright": "© 2026 Chadi. All rights reserved.",
+    "copyright": "Â© 2026 Chadi. All rights reserved.",
     "linkedinCheckedAt": "2026-10-27",
     "notes": [
       "Content was extracted from the live site, the GitHub API, and the public LinkedIn profile, then updated for the Carbon-inspired redesign.",
       "LinkedIn blocks direct scraping. The linkedin section was populated from the public indexed profile at linkedin.com/in/chadi-nasser-08b073227 on 2026-10-27.",
-      "B.S. dates (2020–2023) and GPA (3.25) were confirmed by the owner on 2026-11-11. Keep Upwork and LinkedIn aligned with these values.",
+      "B.S. dates (2020â€“2023) and GPA (3.25) were confirmed by the owner on 2026-11-11. Keep Upwork and LinkedIn aligned with these values.",
       "Skills, 5+ years of experience, security, data platforms, and AI research details were updated from the owner's feedback on 2026-11-11.",
       "The CV at /cv is generated from this file."
     ]
@@ -22,8 +22,8 @@
     "handle": "chadi-nasser",
     "avatarUrl": "https://chadinasser.dev/avatar.jpg",
     "githubUrl": "https://github.com/chadi-nasser",
-    "bio": "I like to code sometimes, and sometimes I code. 😐",
-    "currentGithubBio": "The true art of learning 🎨 begins when you master the skill of learning how to learn 📚✨.",
+    "bio": "I like to code sometimes, and sometimes I code. ðŸ˜",
+    "currentGithubBio": "The true art of learning ðŸŽ¨ begins when you master the skill of learning how to learn ðŸ“šâœ¨.",
     "headline": "Backend & DevOps Engineer | Java, Security, AI",
     "title": "Mid-Level Software Developer at Sword Group",
     "currentRole": "Mid-Level Software Developer",
@@ -55,7 +55,7 @@
     ]
   },
   "hero": {
-    "greeting": "👋",
+    "greeting": "ðŸ‘‹",
     "intro": "Hey there, this is me",
     "title": "Chadi Nasser",
     "tagline": "Backend & DevOps Engineer | Java, Security, AI",
@@ -66,12 +66,12 @@
   "about": {
     "title": "About Me",
     "description": "A little bit about myself",
-    "lead": "I build backend systems that stay fast, observable, and boring to operate. I work mainly in Java and Spring Boot, with a focus on data, security, and shipping reliably. I’m growing toward solution architecture: API contracts, data flow, and trade-offs.",
+    "lead": "I build backend systems that stay fast, observable, and boring to operate. I work mainly in Java and Spring Boot, with a focus on data, security, and shipping reliably. Iâ€™m growing toward solution architecture: API contracts, data flow, and trade-offs.",
     "paragraph": "Backend and DevOps engineer with 5+ years of experience building and scaling backend systems using Java and the Spring Framework. Currently a Mid-Level Software Developer at Sword Group in Beirut, Lebanon, working on API performance, data access, and technical design within a Spring Boot, Snowflake, and PostgreSQL environment. Experienced with Liquibase, MongoDB, security protocols including JWT, OAuth2, OIDC, TOTP, and passkeys, and containerization with Docker and Kubernetes. Strong foundation in low-level systems programming, with research experience fine-tuning embedding models."
   },
   "research": {
     "title": "Optimizing sentence transformers for retrieval",
-    "context": "M.S. in Computer Science · Lebanese International University",
+    "context": "M.S. in Computer Science Â· Lebanese International University",
     "summary": "The work compared full fine-tuning, LoRA, and a lightweight top-layer adapter for sentence-transformer retrieval in a Qdrant-backed pipeline. It focused on the practical trade-off between retrieval quality and the cost of adapting a model to a domain.",
     "topics": [
       "Sentence Transformers",
@@ -88,18 +88,18 @@
       {
         "role": "Mid-Level Software Developer",
         "company": "Sword Group",
-        "period": "Nov 2025 – Present",
+        "period": "Nov 2025 â€“ Present",
         "location": "Beirut, Lebanon",
         "current": true,
         "summary": "Backend engineer on a Spring Boot platform, working across API performance, data access, and technical design in a Snowflake and PostgreSQL environment.",
         "highlights": [
-          "Improved multiple slow API endpoints through profiling and reducing database round trips, including one that went from about 90 seconds to about 20 seconds (roughly 4.5× faster).",
+          "Improved multiple slow API endpoints through profiling and reducing database round trips, including one that went from about 90 seconds to about 20 seconds (roughly 4.5Ã— faster).",
           "Adapted data access to an existing Snowflake and PostgreSQL stack, balancing OLAP constraints with transactional workloads and moving heavy work database-side where it reduced round trips.",
-          "Built data-processing and integration flows for 5–6 GB JSON payloads, generated Excel exports, and helped set up S3 export storage across environments.",
+          "Built data-processing and integration flows for 5â€“6 GB JSON payloads, generated Excel exports, and helped set up S3 export storage across environments.",
           "Proposed technical solutions and improvements during use-case reviews with product and engineering stakeholders, highlighting risks and trade-offs before implementation."
         ],
         "cvHighlights": [
-          "Improved multiple slow API endpoints through profiling and reducing database round trips, including one that went from about 90 seconds to about 20 seconds (roughly 4.5× faster).",
+          "Improved multiple slow API endpoints through profiling and reducing database round trips, including one that went from about 90 seconds to about 20 seconds (roughly 4.5Ã— faster).",
           "Adapted data access to an existing Snowflake and PostgreSQL stack under OLAP constraints.",
           "Proposed technical solutions and improvements in use-case reviews with product and engineering stakeholders."
         ]
@@ -107,14 +107,14 @@
       {
         "role": "Software Engineer",
         "company": "Lebanon AutoTrade",
-        "period": "Jul 2021 – Oct 2025",
+        "period": "Jul 2021 â€“ Oct 2025",
         "location": "North Governorate, Lebanon",
         "current": false,
         "summary": "Built and evolved the core backend powering the lbauto.trade platform.",
         "highlights": [
           "Architected and implemented core Java/Spring Boot microservices exposing secure REST APIs.",
           "Implemented stateless authentication (JWT) plus request rate limiting (Bucket4j).",
-          "Led migration MongoDB → MySQL; standardized schema versioning via Flyway.",
+          "Led migration MongoDB â†’ MySQL; standardized schema versioning via Flyway.",
           "Authored unit & integration tests (JUnit 5, Mockito) to safeguard critical business flows.",
           "Set up CI/CD pipeline (Jenkins + Docker) and deployed backend services on AWS.",
           "Introduced structured logging (SLF4J / Logback) improving production observability."
@@ -128,18 +128,18 @@
     "items": [
       {
         "degree": "M.S. in Computer Science",
-        "period": "2023 – 2025",
+        "period": "2023 â€“ 2025",
         "institution": "Lebanese International University",
         "gpa": "3.96 / 4.0"
       },
       {
         "degree": "B.S. in Computer Science",
-        "period": "2020 – 2023",
+        "period": "2020 â€“ 2023",
         "institution": "Lebanese International University",
         "gpa": "3.25 / 4.0"
       }
     ],
-    "linkedinNote": "B.S. dates (2020–2023) and GPA (3.25) were confirmed by the owner on 2026-11-11. Keep Upwork and LinkedIn aligned with these values."
+    "linkedinNote": "B.S. dates (2020â€“2023) and GPA (3.25) were confirmed by the owner on 2026-11-11. Keep Upwork and LinkedIn aligned with these values."
   },
   "certifications": [
     {
@@ -182,7 +182,7 @@
     "title": "Miscellaneous",
     "description": "Some random facts about me",
     "items": [
-      "👨‍💻 Enjoy building resilient backend & infrastructure tooling."
+      "ðŸ‘¨â€ðŸ’» Enjoy building resilient backend & infrastructure tooling."
     ],
     "currentlyReading": {
       "title": "Designing Data-Intensive Applications",
@@ -200,7 +200,7 @@
     "themeToggle": true
   },
   "footer": {
-    "copyright": "© {year} Chadi. All rights reserved.",
+    "copyright": "Â© {year} Chadi. All rights reserved.",
     "links": [
       {
         "label": "GitHub",
@@ -222,7 +222,7 @@
       "name": "Chadi Nasser",
       "avatarUrl": "https://avatars.githubusercontent.com/u/36199976?v=4",
       "url": "https://github.com/chadi-nasser",
-      "bio": "The true art of learning 🎨 begins when you master the skill of learning how to learn 📚✨.",
+      "bio": "The true art of learning ðŸŽ¨ begins when you master the skill of learning how to learn ðŸ“šâœ¨.",
       "hireable": true,
       "publicRepos": 15,
       "followers": 3,
@@ -373,34 +373,34 @@
     ]
   },
   "toolkit": [
-    { "tool": "Java", "layer": "Languages", "usedFor": "Services and APIs", "core": true },
+    { "tool": "Java", "layer": "Languages", "usedFor": "Services and APIs" },
     { "tool": "TypeScript", "layer": "Languages", "usedFor": "Frontend and tooling" },
     { "tool": "Rust", "layer": "Languages", "usedFor": "Systems and low-level tools" },
     { "tool": "Python", "layer": "Languages", "usedFor": "AI, data, and scripting" },
-    { "tool": "Spring Boot", "layer": "Backend", "usedFor": "REST services", "core": true },
+    { "tool": "Spring Boot", "layer": "Backend", "usedFor": "REST services" },
     { "tool": "Jackson", "layer": "Backend", "usedFor": "JSON serialization" },
     { "tool": "Apache POI", "layer": "Backend", "usedFor": "Excel exports" },
     { "tool": "RestTemplate", "layer": "Backend", "usedFor": "Internal API integration" },
-    { "tool": "PostgreSQL", "layer": "Data", "usedFor": "Relational data", "core": true },
+    { "tool": "PostgreSQL", "layer": "Data", "usedFor": "Relational data" },
     { "tool": "MySQL", "layer": "Data", "usedFor": "Relational data" },
     { "tool": "Flyway", "layer": "Data", "usedFor": "Schema migrations" },
     { "tool": "Liquibase", "layer": "Data", "usedFor": "Database migrations" },
     { "tool": "MongoDB", "layer": "Data", "usedFor": "Document store" },
-    { "tool": "Snowflake", "layer": "Data", "usedFor": "Analytics warehouse", "core": true },
-    { "tool": "Qdrant", "layer": "Data", "usedFor": "Vector search", "core": true },
-    { "tool": "JWT", "layer": "Security", "usedFor": "Stateless authentication", "core": true },
-    { "tool": "OAuth2", "layer": "Security", "usedFor": "Delegated authorization", "core": true },
-    { "tool": "OIDC", "layer": "Security", "usedFor": "Identity and SSO", "core": true },
+    { "tool": "Snowflake", "layer": "Data", "usedFor": "Analytics warehouse" },
+    { "tool": "Qdrant", "layer": "Data", "usedFor": "Vector search" },
+    { "tool": "JWT", "layer": "Security", "usedFor": "Stateless authentication" },
+    { "tool": "OAuth2", "layer": "Security", "usedFor": "Delegated authorization" },
+    { "tool": "OIDC", "layer": "Security", "usedFor": "Identity and SSO" },
     { "tool": "TOTP", "layer": "Security", "usedFor": "Two-factor authentication" },
     { "tool": "Passkeys", "layer": "Security", "usedFor": "Passwordless authentication" },
     { "tool": "Bucket4j", "layer": "Security", "usedFor": "Rate limiting" },
     { "tool": "Astro", "layer": "Web", "usedFor": "This site" },
     { "tool": "Next.js", "layer": "Web", "usedFor": "Full-stack web apps" },
     { "tool": "React", "layer": "Web", "usedFor": "Interactive interfaces" },
-    { "tool": "Docker", "layer": "DevOps", "usedFor": "Container builds", "core": true },
-    { "tool": "Kubernetes", "layer": "DevOps", "usedFor": "Orchestration", "core": true },
-    { "tool": "Jenkins", "layer": "DevOps", "usedFor": "CI/CD pipelines", "core": true },
-    { "tool": "AWS", "layer": "DevOps", "usedFor": "Cloud deployments", "core": true },
+    { "tool": "Docker", "layer": "DevOps", "usedFor": "Container builds" },
+    { "tool": "Kubernetes", "layer": "DevOps", "usedFor": "Orchestration" },
+    { "tool": "Jenkins", "layer": "DevOps", "usedFor": "CI/CD pipelines" },
+    { "tool": "AWS", "layer": "DevOps", "usedFor": "Cloud deployments" },
     { "tool": "Terraform", "layer": "DevOps", "usedFor": "Infrastructure as code" },
     { "tool": "Maven", "layer": "Build", "usedFor": "Java builds" },
     { "tool": "JUnit 5", "layer": "Quality", "usedFor": "Unit and integration tests" },
@@ -410,13 +410,13 @@
     { "tool": "Linux", "layer": "Systems", "usedFor": "Daily driver" },
     { "tool": "Embedding models", "layer": "AI", "usedFor": "Research and retrieval" },
     { "tool": "Fine-tuning", "layer": "AI", "usedFor": "Model adaptation" },
-    { "tool": "RAG", "layer": "AI", "usedFor": "Retrieval pipelines", "core": true },
-    { "tool": "AI agents", "layer": "AI", "usedFor": "Agent workflows", "core": true },
+    { "tool": "RAG", "layer": "AI", "usedFor": "Retrieval pipelines" },
+    { "tool": "AI agents", "layer": "AI", "usedFor": "Agent workflows" },
     { "tool": "Vector search", "layer": "AI", "usedFor": "Semantic retrieval" }
   ],
   "contact": {
     "title": "Contact",
-    "location": "Tripoli, Lebanon · GMT+2 / GMT+3",
+    "location": "Tripoli, Lebanon Â· GMT+2 / GMT+3",
     "availability": "Open to work",
     "rows": [
       {
@@ -432,7 +432,7 @@
         "url": "https://www.linkedin.com/in/chadi-nasser-08b073227/"
       },
       {
-        "label": "Tripoli, Lebanon · GMT+2 / GMT+3",
+        "label": "Tripoli, Lebanon Â· GMT+2 / GMT+3",
         "url": null
       },
       {
@@ -443,12 +443,12 @@
   },
   "errorPages": {
     "404": {
-      "emoji": "🤔",
+      "emoji": "ðŸ¤”",
       "code": 404,
       "message": "It seems you're lost"
     },
     "500": {
-      "emoji": "💀",
+      "emoji": "ðŸ’€",
       "code": 500,
       "message": "Internal Server Error"
     }

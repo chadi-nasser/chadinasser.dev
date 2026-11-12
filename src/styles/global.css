@@ -802,22 +802,29 @@ pre {
   margin-bottom: 0.5rem;
 }
 
-.toolkit-core {
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border);
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.toolkit-also {
-  padding-top: 1.5rem;
+.toolkit-card {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
 }
 
-.toolkit-label {
+.toolkit-card-title {
   margin-bottom: 0.75rem;
   color: var(--muted);
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.toolkit-card .tag {
+  font-size: var(--text-xs);
 }
 
 .toolkit-items {
@@ -836,19 +843,6 @@ pre {
   font-family: var(--font-mono);
   font-size: 0.6875rem;
   line-height: 1.4;
-}
-
-.tag--core {
-  padding: 0.45rem 0.7rem;
-  border-color: var(--border-strong);
-  color: var(--ink);
-  font-size: var(--text-sm);
-}
-
-.tag--also {
-  padding: 0.2rem 0.45rem;
-  color: var(--muted);
-  font-size: var(--text-xs);
 }
 
 .photo-band {
@@ -1405,6 +1399,19 @@ pre {
   .proof-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem 2rem;
+  }
+
+  .toolkit-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .toolkit-card {
+    padding: 1rem 0;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
   }
 
   .ledger-head {

@@ -5,7 +5,6 @@ interface ToolkitItem {
   tool: string;
   layer: string;
   usedFor: string;
-  core?: boolean;
 }
 
 interface Props {
@@ -13,8 +12,83 @@ interface Props {
 }
 
 const { items } = Astro.props;
-const core = items.filter((item) => item.core);
-const also = items.filter((item) => !item.core);
+
+const capabilityGroups = [
+  {
+    title: "Build secure services",
+    tools: [
+      "Java",
+      "Spring Boot",
+      "Jackson",
+      "Apache POI",
+      "RestTemplate",
+      "JUnit 5",
+      "Mockito",
+      "Maven",
+    ],
+  },
+  {
+    title: "Secure the stack",
+    tools: ["JWT", "OAuth2", "OIDC", "TOTP", "Passkeys", "Bucket4j"],
+  },
+  {
+    title: "Work with data",
+    tools: [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Snowflake",
+      "Flyway",
+      "Liquibase",
+      "Qdrant",
+    ],
+  },
+  {
+    title: "Ship and operate",
+    tools: [
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "AWS",
+      "Terraform",
+      "Linux",
+      "SLF4J",
+      "Logback",
+    ],
+  },
+  {
+    title: "Apply AI",
+    tools: [
+      "RAG",
+      "AI agents",
+      "Embedding models",
+      "Fine-tuning",
+      "Vector search",
+      "Python",
+    ],
+  },
+  {
+    title: "Web & systems",
+    tools: ["TypeScript", "Rust", "Astro", "Next.js", "React"],
+  },
+];
+
+const byTool = new Map(items.map((item) => [item.tool, item]));
+const groupedTools = new Set(capabilityGroups.flatMap((group) => group.tools));
+const ungrouped = items.filter((item) => !groupedTools.has(item.tool));
+
+if (ungrouped.length > 0) {
+  throw new Error(
+    `Toolkit tools missing a capability group: ${ungrouped.map((item) => item.tool).join(", ")}`,
+  );
+}
+
+const groups = capabilityGroups.map((group) => ({
+  title: group.title,
+  items: group.tools
+    .map((tool) => byTool.get(tool))
+    .filter((item): item is ToolkitItem => item !== undefined),
+}));
 ---
 
 <section class="section section--surface" id="toolkit">
@@ -25,26 +99,21 @@ const also = items.filter((item) => !item.core);
       intro="A working stack rather than a logo wall. The common thread is systems that are understandable, observable, and boring to operate."
     />
 
-    <div class="toolkit-core">
-      <p class="toolkit-label">Core stack</p>
-      <div class="toolkit-items">
-        {core.map((item) => (
-          <span class="tag tag--core" title={item.usedFor}>
-            {item.tool}
-          </span>
-        ))}
-      </div>
-    </div>
-
-    <div class="toolkit-also">
-      <p class="toolkit-label">Also used</p>
-      <div class="toolkit-items">
-        {also.map((item) => (
-          <span class="tag tag--also" title={item.usedFor}>
-            {item.tool}
-          </span>
-        ))}
-      </div>
+    <div class="toolkit-grid">
+      {
+        groups.map((group) => (
+          <div class="toolkit-card">
+            <p class="toolkit-card-title">{group.title}</p>
+            <div class="toolkit-items">
+              {group.items.map((item) => (
+                <span class="tag" title={item.usedFor}>
+                  {item.tool}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>
